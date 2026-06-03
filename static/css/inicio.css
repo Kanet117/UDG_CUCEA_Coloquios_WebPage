@@ -1,0 +1,123 @@
+/* =======================================================
+   CCAs CUCEA UdeG — Inicio Styles
+   ======================================================= */
+
+/* Banner full-width */
+.banner-ccas {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+.banner-ccas img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tipografía de la página de inicio */
+.ccas-content p {
+    text-align: justify;
+    font-size: 22px;
+}
+
+.ccas-content ul {
+    font-size: 18px;
+}
+
+/* Botones / Grupos de tablas */
+.display-group-tables {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.button-style {
+    font-size: 24px;
+    color: #330099;
+    background-color: white;
+    border: 2px solid orange;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.button-right {
+    float: right;
+}
+
+.botton-events {
+    font-size: 18px;
+    background-color: #2E75B6;
+    color: white;
+    border: 2px solid #203864;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.botton-events:hover {
+    background-color: #203864;
+}
+
+.botton-events.disabled {
+    background-color: #BFBFBF;
+    border: 2px solid #8C8C8C;
+    color: #666666;
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+/* Acordeones */
+.accordion {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.accordion input[type="checkbox"] {
+    display: none;
+}
+
+.accordion_title {
+    display: block;
+    padding: 20px 10px;
+    background: white;
+    cursor: pointer;
+    color: #D90000;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    z-index: 101;
+    border: 1px solid #000;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.accordion_title:hover {
+    background: #E7E7E7;
+}
+
+.accordion_text {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: all 0.5s;
+}
+
+.accordion input[type="checkbox"]:checked ~ .accordion_text {
+    height: auto;
+    margin: 15px 0;
+    position: relative;
+    z-index: 90;
+}

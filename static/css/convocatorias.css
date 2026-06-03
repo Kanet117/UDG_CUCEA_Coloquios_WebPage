@@ -1,0 +1,83 @@
+/* =======================================================
+   CCAs CUCEA UdeG — Convocatorias Styles
+   ======================================================= */
+
+.convocatorias-title {
+    text-align: center;
+    color: #B22222;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.convocatorias-intro {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.convocatorias-box {
+    border: 1px solid #FF6600;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.convocatorias-box h3 {
+    text-align: center;
+    color: #1A237E;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.convocatorias-box ul {
+    padding-left: 40px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.convocatorias-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.convocatorias-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.convocatorias-grid-item {
+    padding: 15px;
+    flex: 1;
+    min-width: 250px;
+    color: white;
+}
+
+.convocatorias-grid-item strong {
+    font-size: 1.1em;
+}
+
+.convocatorias-grid-item ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.convocatorias-grid-item-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.convocatorias-grid-item-center strong {
+    font-size: 1.1em;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCAs | Comité</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/comite.css') }}">
+</head>
+<body>
+
+    <nav class="navbar-ccas">
+        <div class="navbar-inner">
+            <ul class="navbar-nav">
+                <li><a href="{{ url_for('inicio') }}">CCAs</a></li>
+                <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+                <li><a href="{{ url_for('comite') }}" class="active">Comité</a></li>
+                <li><a href="{{ url_for('conferencistas') }}">Conferencistas</a></li>
+                <li><a href="{{ url_for('convocatorias') }}">Convocatorias</a></li>
+                <li><a href="{{ url_for('guias') }}">Guías</a></li>
+                <li><a href="{{ url_for('registro') }}">Registro</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="ccas-content">
+        <h2 class="title">Comité Organizador de CCAs 2026</h2>
+
+        <h3 class="subtitle">Integrantes</h3>
+
+        <div class="comite-card">
+            <p class="table-title" style="background-color:#FF6600;">UDG-CA-931 Educación, Tecnologías e Innovación</p>
+            <p class="table-description" style="border-color: #FF6600;">
+                Dra. Sandra Elizabeth Hidalgo Pérez, Dra. Martha Patricia Martínez Vargas, Dra. María Elena Meda Campaña, y<br><br>
+                <strong>Presidenta del evento y de la RESDO</strong><br>
+                Dra. Karen Hernández Rueda.
+            </p>
+        </div>
+
+        <div class="comite-card">
+            <p class="table-title" style="background-color:#009999;">UDG-CA-649 e-World y Gestión del Conocimiento</p>
+            <p class="table-description" style="border-color:#009999;">
+                Dr. Juan Carlos González Castolo y Dra. Silvia Ramos Cabral.
+            </p>
+        </div>
+
+        <h3 class="subtitle" style="margin-top: 40px;">Comité Técnico</h3>
+
+        <div class="comite-card">
+            <p class="table-title" style="background-color:#4975b6;">CINVESTAV-GI Control y Diagnóstico de Fallas en Sistemas de Eventos Discretos</p>
+            <p class="table-description" style="border-color: #4975b6;">
+                Dr. Antonio Ramírez Treviño y Dr. José Javier Ruiz León.
+            </p>
+        </div>
+
+        <h3 class="subtitle" style="margin-top: 40px;">Colaboradores</h3>
+
+        <div class="comite-card">
+            <p class="table-title" style="background-color:#203864;">División de Estudios Científicos y Tecnológicos<br>CUValles</p>
+            <p class="table-description" style="border-color: #4975b6;">
+                Dra. Eréndira Álvarez Tostado Martínez.
+            </p>
+        </div>
+
+        <div class="comite-card">
+            <p class="table-title" style="background-color:#203864;">Departamento de Sistemas de Información<br>CUCEA</p>
+            <p class="table-description" style="border-color: #4975b6;">
+                Mtro. Alejandro López Rodríguez.
+            </p>
+        </div>
+
+        <div class="comite-card">
+            <p class="table-title" style="background-color:#203864;">Soporte técnico</p>
+            <p class="table-description" style="border-color: #4975b6;">
+                Mtro. Javier Claustro Bobadilla.
+            </p>
+        </div>
+
+        <div class="display-group-tables">
+            <div class="margin-text-aligned-table">
+                <div class="comite-card" style="height: 100%;">
+                    <p class="table-title" style="background-color:#203864;">UDG-CA-539 Análisis e Implementación de<br>Sistemas</p>
+                    <p class="table-description" style="border-color: #203864; height: 100%;">
+                        Dra. Alejandra Gómez Padilla y Dra. Griselda Pérez Torres.
+                    </p>
+                </div>
+            </div>
+            <div class="margin-text-aligned-table">
+                <div class="comite-card" style="height: 100%;">
+                    <p class="table-title" style="background-color:#203864;">UDG-CA-321 Contabilidad, Finanzas,<br>Formación y Gestión de la Contaduría Pública</p>
+                    <p class="table-description" style="border-color: #203864; height: 100%;">
+                        Dra. Mónica Araceli Reyes Rodríguez y Dra. Martha Sheila Gómez González.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="display-group-tables">
+            <div class="margin-text-aligned-table">
+                <div class="comite-card" style="height: 100%;">
+                    <p class="table-title" style="background-color:#203864;">UDG-CA-610 Estudios<br>Organizacionales y Productividad</p>
+                    <p class="table-description" style="border-color:#203864; height: 100%;">
+                        Dra. Martha Karina Amezcua Luján, Dra. Ma. Patricia Rivera Espinoza y J. Jesús Torres Barragán.
+                    </p>
+                </div>
+            </div>
+            <div class="margin-text-aligned-table">
+                <div class="comite-card" style="height: 100%;">
+                    <p class="table-title" style="background-color:#203864;">UDG-CA-722 Sistemas y Gestión<br>de la Información</p>
+                    <p class="table-description" style="border-color: #203864; height: 100%;">
+                        Dr. José de Jesús Jiménez Arévalo y Dr. Adauto Alejandro Casas Flores.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="custom-footer-ccas">
+        <div class="footer-banda-azul">
+            <div class="footer-inner">Instituciones participantes</div>
+        </div>
+        <div class="footer-banda-blanca">
+            <div class="footer-inner">
+                <img alt="Logos de instituciones" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/TodosLogos2026-v2.jpg">
+            </div>
+        </div>
+        <div class="footer-banda-gris">
+            <div class="footer-inner footer-info-flex">
+                <div class="footer-col left">
+                    <div class="footer-contact-item">
+                        <div class="footer-icon-wrapper">
+                            <svg fill="none" height="24" stroke="#330099" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <rect height="16" rx="2" ry="2" width="20" x="2" y="4"></rect>
+                                <path d="M2 4l10 8 10-8"></path>
+                            </svg>
+                        </div>
+                        <div class="footer-contact-text">
+                            <a href="mailto:coloquio@cucea.udg.mx">coloquio@cucea.udg.mx</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col center">
+                    <h3 class="footer-main-title">Coloquio de Cuerpos Académicos (CCAs)</h3>
+                </div>
+                <div class="footer-col right">
+                    <div class="footer-credits">
+                        <div class="credit-item">
+                            <span class="credit-label">Contenido</span>
+                            <span class="credit-name"><a href="https://www.linkedin.com/in/karenhernandezrueda" target="_blank" rel="noopener">Dra. Karen Hernández</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Desarrollo</span>
+                            <span class="credit-name">Jesús A. García Pérez</span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Frontend</span>
+                            <span class="credit-name"><a href="https://www.linkedin.com/in/kanet-sahid-ochoa-guzman-chaptter/" target="_blank" rel="noopener">Kanet Sahid Ochoa Guzmán</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Web</span>
+                            <span class="credit-name">Ángela Jusuneith Silva Ramírez</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

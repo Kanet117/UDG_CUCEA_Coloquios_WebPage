@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCAs | Registro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registro.css') }}">
+</head>
+<body>
+
+    <nav class="navbar-ccas">
+        <div class="navbar-inner">
+            <ul class="navbar-nav">
+                <li><a href="{{ url_for('inicio') }}">CCAs</a></li>
+                <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+                <li><a href="{{ url_for('comite') }}">Comité</a></li>
+                <li><a href="{{ url_for('conferencistas') }}">Conferencistas</a></li>
+                <li><a href="{{ url_for('convocatorias') }}">Convocatorias</a></li>
+                <li><a href="{{ url_for('guias') }}">Guías</a></li>
+                <li><a href="{{ url_for('registro') }}" class="active">Registro</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="ccas-content">
+        <h2 class="title">Registro como asistente o ponente</h2>
+
+        <p class="warning-text">El registro solamente se puede realizar una vez, si no tiene la información completa no lo haga, pero puede ver su contenido.</p>
+
+        <h3 class="section-title"><strong>Asistentes</strong></h3>
+        <p class="section-subtitle">A partir de la convocatoria y hasta el 22 de junio</p>
+        <a class="button-form" href="https://form.jotform.com/232768595536876" target="_blank">Registro como asistente (click)</a>
+
+        <h3 class="section-title"><strong>Ponentes</strong></h3>
+        <p class="section-subtitle">Someter ponencia a partir de la apertura de la convocatoria y hasta el 26/may/26</p>
+        <a class="button-form" href="https://form.jotform.com/232768577786883" target="_blank">Someter ponencia (click)</a>
+
+        <p class="section-subtitle">Registrar su ponencia a partir del 1° de junio y hasta el 12 de junio</p>
+        <a class="button-form button-disabled">Registro de ponencia (apertura 1°junio)</a>
+    </div>
+
+    <footer class="custom-footer-ccas">
+        <div class="footer-banda-azul">
+            <div class="footer-inner">Instituciones participantes</div>
+        </div>
+        <div class="footer-banda-blanca">
+            <div class="footer-inner">
+                <img alt="Logos de instituciones" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/TodosLogos2026-v2.jpg">
+            </div>
+        </div>
+        <div class="footer-banda-gris">
+            <div class="footer-inner footer-info-flex">
+                <div class="footer-col left">
+                    <div class="footer-contact-item">
+                        <div class="footer-icon-wrapper">
+                            <svg fill="none" height="24" stroke="#330099" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <rect height="16" rx="2" ry="2" width="20" x="2" y="4"></rect>
+                                <path d="M2 4l10 8 10-8"></path>
+                            </svg>
+                        </div>
+                        <div class="footer-contact-text">
+                            <a href="mailto:coloquio@cucea.udg.mx">coloquio@cucea.udg.mx</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col center">
+                    <h3 class="footer-main-title">Coloquio de Cuerpos Académicos (CCAs)</h3>
+                </div>
+                <div class="footer-col right">
+                    <div class="footer-credits">
+                        <div class="credit-item">
+                            <span class="credit-label">Contenido</span>
+                            <span class="credit-name"><a href="https://www.linkedin.com/in/karenhernandezrueda" target="_blank" rel="noopener">Dra. Karen Hernández</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Desarrollo</span>
+                            <span class="credit-name">Jesús A. García Pérez</span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Frontend</span>
+                            <span class="credit-name"><a href="https://www.linkedin.com/in/kanet-sahid-ochoa-guzman-chaptter/" target="_blank" rel="noopener">Kanet Sahid Ochoa Guzmán</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Web</span>
+                            <span class="credit-name">Ángela Jusuneith Silva Ramírez</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

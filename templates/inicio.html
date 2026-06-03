@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCAs | Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inicio.css') }}">
+</head>
+<body>
+
+    <nav class="navbar-ccas">
+        <div class="navbar-inner">
+            <ul class="navbar-nav">
+                <li><a href="{{ url_for('inicio') }}" class="active">CCAs</a></li>
+                <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+                <li><a href="{{ url_for('comite') }}">Comité</a></li>
+                <li><a href="{{ url_for('conferencistas') }}">Conferencistas</a></li>
+                <li><a href="{{ url_for('convocatorias') }}">Convocatorias</a></li>
+                <li><a href="{{ url_for('guias') }}">Guías</a></li>
+                <li><a href="{{ url_for('registro') }}">Registro</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="banner-ccas">
+        <img alt="Banner principal CCAs" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/UdeG%20gris%20fuente-PDI%20UdeG%202019-2025.jpg">
+    </div>
+
+    <div class="ccas-content">
+        <p>El <strong style="color:#B22222;">Coloquio de Cuerpos Académicos (CCAs)</strong> es un evento de difusión y de divulgación de la ciencia y la tecnología que inició en 2020 de forma anual en modalidad virtual con sede en el Centro Universitario de Ciencias Económico Administrativas (CUCEA) de la Universidad de Guadalajara (UdeG) a través del Departamento de Sistemas de Información (DSI), como un espacio de colaboración y de participación en mesas de trabajo de los miembros de los Cuerpos Académicos (CAs) de la institución con otros Grupos de Investigación (GI) y CAs de otras instituciones. Además de presentación de ponencias de investigación concluidos y en proceso, se han impartido conferencias plenarias y talleres con apoyo de CAs, En Consolidación (CAEC) y Consolidados (CAC), para compartir experiencias y recomendaciones que sirvan a otros CAs en el proceso nacional del Programa para el Desarrollo Profesional Docente (PRODEP).</p>
+
+        <p>Este evento es lidereado por el CAC de Educación, Tecnologías e Innovación (UDG-CA-931) en colaboración con el CAEC de e-World y Gestión del conocimiento (UDG-CA-649) del DSI del CUCEA. Igualmente, con la participación inicial del CAEC de Sistemas y Gestión de la Información (UDG-CA-722). A partir de 2022, CCAs se establece con periodicidad bienal, y se integra a las actividades de la red de Estudios y Desarrollo de las Organizaciones (<a href="https://sites.google.com/cucea.udg.mx/resdo/inicio" style="color: #2E75B6; text-decoration: underline; font-weight: bold;">RESDO</a>) con adscripción al CUCEA, año en que se funda esta y que coordina el CA de Educación, Tecnologías e Innovación. A partir de 2023, el CA de Estudios Organizacionales y Productividad (UDG-CA-610), miembro de la <a href="https://sites.google.com/cucea.udg.mx/resdo/inicio" style="color: #2E75B6; text-decoration: underline; font-weight: bold;">RESDO</a>, colabora en la organización del evento. Asimismo, el CA de Análisis e Implementación de Sistemas (UDG-CA-539) participó en su organización.</p>
+
+        <div class="accordion">
+            <input id="open_1" name="accordion" type="checkbox">
+            <label class="accordion_title" for="open_1">Objetivos</label>
+            <div class="accordion_text">
+                <ul style="margin: 0px 50px 0px">
+                    <li>Proporcionar un espacio de colaboración y de participación entre los miembros de los CAs para mejorar su nivel de consolidación.</li>
+                    <li>Difundir y divulgar los trabajos de investigación de los CAs en sus diferentes disciplinas.</li>
+                    <li>Favorecer la colaboración y la cooperación nacional e internacional entre los investigadores de CAs de diversas disciplinas del conocimiento.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <input id="open_2" name="accordion" type="checkbox">
+            <label class="accordion_title" for="open_2">Eventos anteriores</label>
+            <div class="accordion_text">
+                <div class="display-group-tables">
+                    <a class="botton-events" href="https://drive.google.com/drive/folders/1EE3QOpteV-DqsaAfO7AvfH6g2iOj6P8h?usp=sharing" target="_blank">CCAs 2021</a>
+                    <a class="botton-events" href="https://drive.google.com/drive/folders/1j0toGIsRZ4bll8OaOXFIZYlbfxrtIqdd?usp=sharing" target="_blank">CCAs 2022</a>
+                    <a class="botton-events" href="https://sites.google.com/cucea.udg.mx/ccas/inicio" target="_blank">CCAs 2024</a>
+                    <a class="botton-events disabled">CCAs 2026</a>
+                    <a class="botton-events disabled">CCAs 2028</a>
+                </div>
+            </div>
+        </div>
+
+        <div style="overflow: hidden; padding-bottom: 20px;">
+            <h1 class="button-style" style="display: inline-block;"><strong>Modalidad Virtual</strong></h1>
+            <h1 class="button-style button-right" style="display: inline-block;"><strong>Costo: gratuito</strong></h1>
+        </div>
+    </div>
+
+    <footer class="custom-footer-ccas">
+        <div class="footer-banda-azul">
+            <div class="footer-inner">Instituciones participantes</div>
+        </div>
+        <div class="footer-banda-blanca">
+            <div class="footer-inner">
+                <img alt="Logos de instituciones" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/TodosLogos2026-v2.jpg">
+            </div>
+        </div>
+        <div class="footer-banda-gris">
+            <div class="footer-inner footer-info-flex">
+                <div class="footer-col left">
+                    <div class="footer-contact-item">
+                        <div class="footer-icon-wrapper">
+                            <svg fill="none" height="24" stroke="#330099" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <rect height="16" rx="2" ry="2" width="20" x="2" y="4"></rect>
+                                <path d="M2 4l10 8 10-8"></path>
+                            </svg>
+                        </div>
+                        <div class="footer-contact-text">
+                            <a href="mailto:coloquio@cucea.udg.mx">coloquio@cucea.udg.mx</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col center">
+                    <h3 class="footer-main-title">Coloquio de Cuerpos Académicos (CCAs)</h3>
+                </div>
+                <div class="footer-col right">
+                    <div class="footer-credits">
+                        <div class="credit-item">
+                            <span class="credit-label">Contenido</span>
+                            <span class="credit-name"><a href="https://www.linkedin.com/in/karenhernandezrueda" target="_blank" rel="noopener">Dra. Karen Hernández</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Desarrollo</span>
+                            <span class="credit-name">Jesús A. García Pérez</span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Frontend</span>
+                            <span class="credit-name"><a href="https://www.linkedin.com/in/kanet-sahid-ochoa-guzman-chaptter/" target="_blank" rel="noopener">Kanet Sahid Ochoa Guzmán</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Web</span>
+                            <span class="credit-name">Ángela Jusuneith Silva Ramírez</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

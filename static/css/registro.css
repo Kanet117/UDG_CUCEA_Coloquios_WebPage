@@ -1,0 +1,58 @@
+/* =======================================================
+   CCAs CUCEA UdeG — Registro Styles
+   ======================================================= */
+
+.ccas-content .title {
+    margin-bottom: 20px;
+}
+
+.ccas-content .warning-text {
+    text-align: center;
+    color: #0056b3;
+    font-weight: bold;
+    margin: 25px 0 40px 0;
+    font-size: 20px;
+}
+
+.ccas-content .section-title {
+    text-align: center;
+    font-size: 22px;
+    color: #FF6600;
+    margin-bottom: 5px;
+}
+
+.ccas-content .section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #5f6368;
+    margin-bottom: 20px;
+}
+
+.ccas-content .button-form {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: #203864;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.ccas-content .button-form:hover {
+    background-color: #152646;
+    text-decoration: none;
+}
+
+.ccas-content .button-disabled {
+    background-color: #808080;
+    cursor: not-allowed;
+}
+
+.ccas-content .button-disabled:hover {
+    background-color: #808080;
+}

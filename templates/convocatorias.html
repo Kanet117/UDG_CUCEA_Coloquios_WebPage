@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCAs | Convocatorias</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/convocatorias.css') }}">
+</head>
+<body>
+
+    <nav class="navbar-ccas">
+        <div class="navbar-inner">
+            <ul class="navbar-nav">
+                <li><a href="{{ url_for('inicio') }}">CCAs</a></li>
+                <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+                <li><a href="{{ url_for('comite') }}">Comité</a></li>
+                <li><a href="{{ url_for('conferencistas') }}">Conferencistas</a></li>
+                <li><a href="{{ url_for('convocatorias') }}" class="active">Convocatorias</a></li>
+                <li><a href="{{ url_for('guias') }}">Guías</a></li>
+                <li><a href="{{ url_for('registro') }}">Registro</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="ccas-content">
+        <h2 class="convocatorias-title">Convocatorias</h2>
+
+        <p class="convocatorias-intro">
+            Los Cuerpos Académicos con claves UDG-CA-931, UDG-CA-649, UDG-CA-722, UDG-CA-539, y la red de Estudios y Desarrollo de las Organizaciones (RESDO) invitan a los académicos, investigadores, tesistas y profesionales de diversas áreas del conocimiento, que formen parte de un CA o grupo de investigación, para que difundan y divulguen sus estudios e investigaciones sobre sus líneas de investigación en el <strong style="color: #FF6600;">evento virtual</strong>.
+        </p>
+
+        <div class="convocatorias-box">
+            <h3>Coloquio de Cuerpos Académicos (CCAs) 2024</h3>
+            <p>A través de su asistencia y/o de ponencias de investigación concluidas o en proceso bajo las siguientes consideraciones:</p>
+            <ul>
+                <li>Número máximo de ponentes: 4 por ponencia.</li>
+                <li>Duración de ponencia de trabajo concluido: 25min (20 min de presentación y 5 min de preguntas).</li>
+                <li>Duración de ponencia de trabajo en proceso: 15min (10 min de presentación y 5 min de preguntas).</li>
+                <li>Envío de presentación a través del registro respectivo.</li>
+                <li>Formato guía <em>PlantillaPCCAs</em> correspondiente a ponencia.</li>
+                <li>Inicio de envío a partir de la presente convocatoria.</li>
+                <li>Costo gratuito por CA o GI.</li>
+                <li>Más información en el menú Guías.</li>
+            </ul>
+            <p>
+                A realizarse en la semana del <strong style="color: #FF6600;">1 al 5 de julio de 2024</strong> con actividades complementarias como conferencias plenarias y talleres. Los participantes que solamente serán <span style="color: #3b82f6;">asistentes</span> pueden hacer su registro a partir del <span style="color: #3b82f6;">29/mar/24</span> en el menú registro en la opción <span style="color: #3b82f6;">registro de asistente</span>. Asimismo, les invitan a participar en la convocatoria de publicación de un libro científico.
+            </p>
+        </div>
+
+        <div class="convocatorias-grid">
+            <div class="convocatorias-grid-item" style="background-color: #1A237E;">
+                <strong style="font-size: 1.1em;">Fechas de ponencias</strong>
+                <ul>
+                    <li>Límite de envío: <strike>31/ene/24</strike> aplazo a <strong>21/feb/24</strong></li>
+                    <li>Notificación de aceptación: 27-29/febrero/24</li>
+                    <li>Registro: 31/mayo/24</li>
+                </ul>
+            </div>
+            <div class="convocatorias-grid-item-center" style="background-color: #FF6600;">
+                <strong>Las convocatorias<br>para ponencia y<br>publicación son<br>independientes</strong>
+            </div>
+            <div class="convocatorias-grid-item" style="background-color: #1A237E;">
+                <strong style="font-size: 1.1em;">Fechas de publicación</strong>
+                <ul>
+                    <li>Límite de envío <strong>no modificable</strong>: 31/julio/24</li>
+                    <li>Notificación de aceptación: 29-31/agosto/24</li>
+                    <li>Registro: 17/septiembre/24</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="convocatorias-box">
+            <h3>Publicación de libro científico</h3>
+            <p>El CA o Grupo de Investigación (GI) puede someter un artículo de su investigación concluida para publicarse como capítulo de libro con las siguientes consideraciones:</p>
+            <ul>
+                <li>Trabajos originales e inéditos no publicados antes ni estar en revisión en otra parte.</li>
+                <li>Número máximo de autores: 5 por capítulo.</li>
+                <li>Capítulo con doi.</li>
+                <li>Editorial brasileña Atena.</li>
+                <li>Indexadores: International Scientific Indexing, Dialnet, Latindex, Redib, entre otros.</li>
+                <li>Evaluación a doble ciego.</li>
+                <li>Envío del artículo a través del registro respectivo.</li>
+                <li>Formato guía <em>PlantillaLibro</em> correspondiente a publicación.</li>
+                <li>Costo tentativo: $3,000- $5,000 pesos por CA o GI. Al momento de la notificación se confirma el monto.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="custom-footer-ccas">
+        <div class="footer-banda-azul">
+            <div class="footer-inner">Instituciones participantes</div>
+        </div>
+        <div class="footer-banda-blanca">
+            <div class="footer-inner">
+                <img alt="Logos de instituciones" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/TodosLogos2026-v2.jpg">
+            </div>
+        </div>
+        <div class="footer-banda-gris">
+            <div class="footer-inner footer-info-flex">
+                <div class="footer-col left">
+                    <div class="footer-contact-item">
+                        <div class="footer-icon-wrapper">
+                            <svg fill="none" height="24" stroke="#330099" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <rect height="16" rx="2" ry="2" width="20" x="2" y="4"></rect>
+                                <path d="M2 4l10 8 10-8"></path>
+                            </svg>
+                        </div>
+                        <div class="footer-contact-text">
+                            <a href="mailto:coloquio@cucea.udg.mx">coloquio@cucea.udg.mx</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col center">
+                    <h3 class="footer-main-title">Coloquio de Cuerpos Académicos (CCAs)</h3>
+                </div>
+                <div class="footer-col right">
+                    <div class="footer-credits">
+                        <div class="credit-item">
+                            <span class="credit-label">Contenido</span>
+                            <span class="credit-name"><a href="https://www.linkedin.com/in/karenhernandezrueda" target="_blank" rel="noopener">Dra. Karen Hernández</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Desarrollo</span>
+                            <span class="credit-name">Jesús A. García Pérez</span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Frontend</span>
+                            <span class="credit-name"><a href="https://www.linkedin.com/in/kanet-sahid-ochoa-guzman-chaptter/" target="_blank" rel="noopener">Kanet Sahid Ochoa Guzmán</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Web</span>
+                            <span class="credit-name">Ángela Jusuneith Silva Ramírez</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

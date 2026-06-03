@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCAs | Conferencistas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/conferencistas.css') }}">
+</head>
+<body>
+
+    <nav class="navbar-ccas">
+        <div class="navbar-inner">
+            <ul class="navbar-nav">
+                <li><a href="{{ url_for('inicio') }}">CCAs</a></li>
+                <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+                <li><a href="{{ url_for('comite') }}">Comité</a></li>
+                <li><a href="{{ url_for('conferencistas') }}" class="active">Conferencistas</a></li>
+                <li><a href="{{ url_for('convocatorias') }}">Convocatorias</a></li>
+                <li><a href="{{ url_for('guias') }}">Guías</a></li>
+                <li><a href="{{ url_for('registro') }}">Registro</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="ccas-content">
+        <h1 class="title-main">Conferencias Plenarias</h1>
+
+        <div class="speakers-container">
+
+            <div class="speaker-card">
+                <div class="speaker-photo">
+                    <img alt="Dr. Alexandro Escudero Nahón" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/AlejandroEscudero.jpeg">
+                    <div class="speaker-label">Etiqueta editable</div>
+                </div>
+                <div class="speaker-info">
+                    <h3 class="speaker-name">Dr. Alexandro Escudero Nahón</h3>
+                    <p class="speaker-talk-title">Consideraciones editoriales para la publicación de artículos científicos</p>
+                    <p class="speaker-date">29 Junio | 9:15 - 10:15 H</p>
+                    <p class="speaker-bio">
+                        Doctor en Educación por la Universidad de Barcelona, España. Pertenece al Sistema Nacional de Investigadoras e Investigadores (SNII) en el Nivel 1 de la Secretaría de Ciencia, Humanidades, Tecnología e Innovación (SECIHTI). Es profesor investigador de tiempo completo en la Universidad Autónoma de Querétaro, México. Dirige el proyecto Transdigital, que es una iniciativa ciudadana para la difusión de la ciencia con tres líneas de trabajo: revista científica Transdigital, Congreso Virtual Transdigital, Editorial Electrónica Transdigital y revista Divulgación Transdigital. Fue coordinador del Área Temática 18: Tecnologías de Información y Comunicación y Educación del Consejo Mexicano de Investigación Educativa (COMIE) hasta el 2026. Coordina el Comité de Educación Transdigital de la Red LaTE México, que es una Red Temática SECIHTI. Forma parte del Cuerpo Académico Consolidado "Innovación Educativa y Tecnología" de la Secretaría de Educación Pública de México (SEP). Es miembro de la Comisión para el desarrollo de talento y cultura tecno-educativa, del Grupo de Trabajo Gestión de Tecnología Educativa de la sección Tecnologías de la Información y Comunicaciones de la Asociación Nacional de Universidades e Instituciones de Educación Superior (ANUIES).
+                    </p>
+                </div>
+            </div>
+
+            <div class="speaker-card">
+                <div class="speaker-photo">
+                    <img alt="Dr. Antonio Sánchez Bernal" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/dr._antonio_sanchez_bernal.jpg">
+                    <div class="speaker-label">Etiqueta editable</div>
+                </div>
+                <div class="speaker-info">
+                    <h3 class="speaker-name">Dr. Antonio Sánchez Bernal</h3>
+                    <p class="speaker-talk-title">Papel "Estrategias para la mejora del desempeño de CAs"</p>
+                    <p class="speaker-date">30 junio 2024 | 9:00 - 10:00 H</p>
+                    <p class="speaker-bio">
+                        <strong>Coordinadores de Investigación de CUCEA, CUSUR y CUValles.</strong><br>
+                        Doctor en Ciencias Sociales especialidad Desarrollo Regional, Maestro en Economía, SNI Nivel I. Investigación en finanzas públicas municipales, instituciones y desarrollo municipal, miembro del Comité Técnico del Premio Gobierno y Gestión Local. Autor de un amplio número de libros y artículos especializados en desarrollo municipal. Ex presidente de la Academia Jalisciense de Ciencias. Ex presidente de la Red IGLOM. Jefe del DER-INESER de la UdeG, 2013-2019. Director de la DES, CUCEA UdeG.
+                    </p>
+                </div>
+            </div>
+
+            <div class="speaker-card">
+                <div class="speaker-photo">
+                    <img alt="Mtra. Xochitl Citlali Jiménez Román" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/X_CitlaliJR.jpg">
+                    <div class="speaker-label">Etiqueta editable</div>
+                </div>
+                <div class="speaker-info">
+                    <h3 class="speaker-name">Mtra. Xochitl Citlali Jiménez Román</h3>
+                    <p class="speaker-talk-title">Propiedad Intelectual</p>
+                    <p class="speaker-date">3 julio 2024 | 9:00 - 10:00 H</p>
+                    <p class="speaker-bio">
+                        Estudiante del doctorado en Tecnologías de Información. Cuenta con publicaciones como <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=10670946" target="_blank">"Propuesta de una aplicación móvil para la concientización del cáncer de mama"</a> y <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=8910669" target="_blank">"Aplicación móvil para el control de diabetes"</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="custom-footer-ccas">
+        <div class="footer-banda-azul">
+            <div class="footer-inner">Instituciones participantes</div>
+        </div>
+        <div class="footer-banda-blanca">
+            <div class="footer-inner">
+                <img alt="Logos de instituciones" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/TodosLogos2026-v2.jpg">
+            </div>
+        </div>
+        <div class="footer-banda-gris">
+            <div class="footer-inner footer-info-flex">
+                <div class="footer-col left">
+                    <div class="footer-contact-item">
+                        <div class="footer-icon-wrapper">
+                            <svg fill="none" height="24" stroke="#330099" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <rect height="16" rx="2" ry="2" width="20" x="2" y="4"></rect>
+                                <path d="M2 4l10 8 10-8"></path>
+                            </svg>
+                        </div>
+                        <div class="footer-contact-text">
+                            <a href="mailto:coloquio@cucea.udg.mx">coloquio@cucea.udg.mx</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col center">
+                    <h3 class="footer-main-title">Coloquio de Cuerpos Académicos (CCAs)</h3>
+                </div>
+                <div class="footer-col right">
+                    <div class="footer-credits">
+                        <div class="credit-item">
+                            <span class="credit-label">Contenido</span>
+                            <span class="credit-name"><a href="https://www.linkedin.com/in/karenhernandezrueda" target="_blank" rel="noopener">Dra. Karen Hernández</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Desarrollo</span>
+                            <span class="credit-name">Jesús A. García Pérez</span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Frontend</span>
+                            <span class="credit-name"><a href="https://www.linkedin.com/in/kanet-sahid-ochoa-guzman-chaptter/" target="_blank" rel="noopener">Kanet Sahid Ochoa Guzmán</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Web</span>
+                            <span class="credit-name">Ángela Jusuneith Silva Ramírez</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
