@@ -14,14 +14,13 @@
 - **Memory Bank** completo (6 archivos core)
 
 ## What's Left to Build
-- **README.md** — pendiente, el usuario lo solicitará cuando esté listo
-- Posible verificación visual contra el original Drupal
+- Nada — proyecto completo.
 
 ## Current Status
-**COMPLETED** — Todos los archivos HTML, CSS, JS, memory-bank y .gitignore están creados. README.md pendiente de instrucción del usuario.
+**COMPLETED** — Todos los archivos HTML, CSS, JS, templates, memory-bank, .gitignore, README.md, wiki/Home.md y LICENSE están creados.
 
 ## Known Issues
-- Ninguno conocido. Todo migrado del Drupal original.
+- Ninguno conocido. Todo migrado del Drupal original. El proyecto es estático con Flask para desarrollo local y template inheritance.
 
 ## Evolution of Project Decisions
 1. **Drupal → HTML estático**: Decisión forzada por burocracia de accesos (~3 meses para primer acceso, accesos CSS incompletos después de 4 meses)

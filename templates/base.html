@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCAs | {% block page_title %}Inicio{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    {% block page_css %}{% endblock %}
+</head>
+<body>
+
+    <nav class="navbar-ccas">
+        <div class="navbar-inner">
+            <ul class="navbar-nav">
+                <li><a href="{{ url_for('inicio') }}"{% if active_page == 'inicio' %} class="active"{% endif %}>CCAs</a></li>
+                <li><a href="{{ url_for('inicio') }}"{% if active_page == 'inicio' %} class="active"{% endif %}>Inicio</a></li>
+                <li><a href="{{ url_for('convocatorias') }}"{% if active_page == 'convocatorias' %} class="active"{% endif %}>Convocatorias</a></li>
+                <li><a href="{{ url_for('comite') }}"{% if active_page == 'comite' %} class="active"{% endif %}>Comité</a></li>
+                <li><a href="{{ url_for('guias') }}"{% if active_page == 'guias' %} class="active"{% endif %}>Guías</a></li>
+                <li><a href="{{ url_for('registro') }}"{% if active_page == 'registro' %} class="active"{% endif %}>Registro</a></li>
+                <li><a href="{{ url_for('programa') }}"{% if active_page == 'programa' %} class="active"{% endif %}>Programa</a></li>
+                <li><a href="{{ url_for('conferencistas') }}"{% if active_page == 'conferencistas' %} class="active"{% endif %}>Conferencistas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer class="custom-footer-ccas">
+        <div class="footer-banda-azul">
+            <div class="footer-inner">Instituciones participantes</div>
+        </div>
+        <div class="footer-banda-blanca">
+            <div class="footer-inner">
+                <img alt="Logos de instituciones" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/TodosLogos2026-v2.jpg">
+            </div>
+        </div>
+        <div class="footer-banda-gris">
+            <div class="footer-inner footer-info-flex">
+                <div class="footer-col left">
+                    <div class="footer-contact-item">
+                        <div class="footer-icon-wrapper">
+                            <svg fill="none" height="24" stroke="#330099" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <rect height="16" rx="2" ry="2" width="20" x="2" y="4"></rect>
+                                <path d="M2 4l10 8 10-8"></path>
+                            </svg>
+                        </div>
+                        <div class="footer-contact-text">
+                            <a href="mailto:coloquio@cucea.udg.mx">coloquio@cucea.udg.mx</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col center">
+                    <h3 class="footer-main-title">Coloquio de Cuerpos Académicos (CCAs)</h3>
+                </div>
+                <div class="footer-col right">
+                    <div class="footer-credits">
+                        <div class="credit-item">
+                            <span class="credit-label">Contenido</span>
+                            <span class="credit-name">Dra. Karen Hernández</span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Desarrollo</span>
+                            <span class="credit-name">Jesús A. García Pérez</span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Frontend</span>
+                            <span class="credit-name"><a href="https://www.linkedin.com/in/kanet-sahid-ochoa-guzman-chaptter/" target="_blank" rel="noopener">Kanet Sahid Ochoa Guzmán</a></span>
+                        </div>
+                        <div class="credit-item">
+                            <span class="credit-label">Web</span>
+                            <span class="credit-name">Ángela Jusuneith Silva Ramírez</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
