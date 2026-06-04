@@ -1,0 +1,80 @@
+/* =======================================================
+   CCAs CUCEA UdeG — Programa Styles
+   ======================================================= */
+
+.ccas-content .title-orange {
+    font-weight: bold;
+    text-align: center;
+    color: #FF6600;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.ccas-content .subtitle-blue {
+    text-align: center;
+    color: #1A73E8;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.ccas-content .title-grey {
+    font-weight: bold;
+    text-align: center;
+    color: #808080;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.ccas-content .letrero-azul {
+    background-color: #203864;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.ccas-content .contenedor-programa-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ccas-content .contenedor-programa-imagenes img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 45%;
+    min-width: 300px;
+}
+
+.ccas-content .enlaces-youtube {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+.ccas-content .boton-dia-activo {
+    background-color: #203864;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.ccas-content .boton-dia-activo:hover {
+    background-color: #152646;
+    text-decoration: none;
+}

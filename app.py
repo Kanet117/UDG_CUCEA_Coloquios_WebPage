@@ -22,6 +22,10 @@ def conferencistas():
 def convocatorias():
     return render_template('convocatorias.html')
 
+@app.route('/programa')
+def programa():
+    return render_template('programa.html')
+
 @app.route('/guias')
 def guias():
     return render_template('guias.html')

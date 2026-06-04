@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCAs | Registro</title>
+    <title>CCAs | Programa</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/registro.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/programa.css') }}">
 </head>
 <body>
 
@@ -17,28 +17,34 @@
                 <li><a href="{{ url_for('comite') }}">Comité</a></li>
                 <li><a href="{{ url_for('conferencistas') }}">Conferencistas</a></li>
                 <li><a href="{{ url_for('convocatorias') }}">Convocatorias</a></li>
-                <li><a href="{{ url_for('programa') }}">Programa</a></li>
+                <li><a href="{{ url_for('programa') }}" class="active">Programa</a></li>
                 <li><a href="{{ url_for('guias') }}">Guías</a></li>
-                <li><a href="{{ url_for('registro') }}" class="active">Registro</a></li>
+                <li><a href="{{ url_for('registro') }}">Registro</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="ccas-content">
-        <h2 class="title">Registro como asistente o ponente</h2>
+        <h2 class="title-orange">Programa del evento</h2>
 
-        <p class="warning-text">El registro solamente se puede realizar una vez, si no tiene la información completa no lo haga, pero puede ver su contenido.</p>
+        <p class="subtitle-blue">(Próximamente: Programa detallado)</p>
 
-        <h3 class="section-title"><strong>Asistentes</strong></h3>
-        <p class="section-subtitle">A partir de la convocatoria y hasta el 22 de junio</p>
-        <a class="button-form" href="https://form.jotform.com/232768595536876" target="_blank">Registro como asistente (click)</a>
+        <div class="letrero-azul">Lunes 29 de junio a viernes 3 de julio</div>
 
-        <h3 class="section-title"><strong>Ponentes</strong></h3>
-        <p class="section-subtitle">Someter ponencia a partir de la apertura de la convocatoria y hasta el 26/may/26</p>
-        <a class="button-form" href="https://form.jotform.com/232768577786883" target="_blank">Someter ponencia (click)</a>
+        <div class="contenedor-programa-imagenes">
+            <img alt="Programa parte 1" src="https://ccas.cucea.udg.mx/sites/default/files/2026-05/programa1.jpeg">
+            <img alt="Programa parte 2" src="https://ccas.cucea.udg.mx/sites/default/files/2026-05/programa2.jpeg">
+        </div>
 
-        <p class="section-subtitle">Registrar su ponencia a partir del 1° de junio y hasta el 12 de junio</p>
-        <a class="button-form button-disabled">Registro de ponencia (apertura 1°junio)</a>
+        <h2 class="title-grey">Enlace del evento por día (YouTube)</h2>
+
+        <div class="enlaces-youtube">
+            <a class="boton-dia-activo" href="https://youtube.com/live/nCZSppFK-cI?feature=share" target="_blank">Lunes 29 de junio</a>
+            <a class="boton-dia-activo" href="https://youtube.com/live/husT2zPK2Ds?feature=share" target="_blank">Martes 30 de junio</a>
+            <a class="boton-dia-activo" href="https://youtube.com/live/uyUSmKjxL64?feature=share" target="_blank">Miércoles 1° de julio</a>
+            <a class="boton-dia-activo" href="https://youtube.com/live/DQcBeiIUdiY?feature=share" target="_blank">Jueves 2 de julio</a>
+            <a class="boton-dia-activo" href="https://youtube.com/live/0MBCjaeDPEY?feature=share" target="_blank">Viernes 3 de julio</a>
+        </div>
     </div>
 
     <footer class="custom-footer-ccas">
