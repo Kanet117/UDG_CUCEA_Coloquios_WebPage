@@ -17,5 +17,4 @@ desktop.ini
 # Logs
 *.log
 
-# Memory bank is documentation, include it
-# memory-bank/ is intentionally trackedmemory-bank/
+memory-bank/
