@@ -100,6 +100,12 @@ El servidor estara disponible en `http://localhost:5000`.
 | `/guias` | Guias | [ccas.cucea.udg.mx/guias](https://ccas.cucea.udg.mx/guias) |
 | `/registro` | Registro | [ccas.cucea.udg.mx/registro](https://ccas.cucea.udg.mx/registro) |
 
+### Diseno responsive
+El sitio utiliza Flexbox y CSS Grid para garantizar una experiencia de usuario consistente en todos los dispositivos, desde telefonos moviles hasta monitores de escritorio. Los media queries ajustan la navegacion, el footer y las tarjetas de contenido segun el tamano de pantalla.
+
+### Replica exacta del diseno aprobado
+Todo el diseno visual se baso en el prototipo proporcionado por el cliente en Google Sites, replicando fielmente colores, tipografia, espaciado y distribucion de elementos sin margen de reinterpretacion.
+
 ## Decisiones de Diseno
 
 ### Navbar (Flexbox)

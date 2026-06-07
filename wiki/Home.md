@@ -2,7 +2,7 @@
 
 ## Resumen del Proyecto
 
-Desarrollo y migracion del sitio web oficial del **Coloquio de Cuerpos Academicos (CCAs)** del Centro Universitario de Ciencias Economico Administrativas (CUCEA) de la Universidad de Guadalajara. El proyecto comprendio la creacion de 7 paginas web, la integracion con Drupal 10 como CMS institucional, y una migracion paralela a Flask como alternativa independiente.
+Desarrollo y migracion del sitio web oficial del **Coloquio de Cuerpos Academicos (CCAs)** del Centro Universitario de Ciencias Economico Administrativas (CUCEA) de la Universidad de Guadalajara. El proyecto comprendio la creacion de 7 paginas web, la integracion con Drupal 10 como CMS institucional, y una migracion paralela a Flask como alternativa independiente. El diseno fue proporcionado por el cliente a traves de Google Sites y se replico al 100%, incluyendo una experiencia responsive optimizada para dispositivos moviles y de escritorio.
 
 ## Entregables
 

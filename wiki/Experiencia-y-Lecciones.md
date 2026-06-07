@@ -11,7 +11,8 @@ Desarrollar un sitio web institucional que cumpliera con los siguientes requerim
 - Soportar 7 secciones de contenido: Inicio, Comite, Conferencistas, Convocatorias, Guias, Programa y Registro
 - Incluir funcionalidades como acordeones CSS, iframes de Google Drive, reproductores de YouTube y formularios Jotform
 - Ser mantenible por personal no tecnico
-- Coincidir visualmente con el diseno aprobado en Google Sites
+- Replicar al 100% el diseno aprobado en Google Sites, sin margen de reinterpretacion creativa
+- Garantizar una experiencia de usuario consistente en dispositivos moviles y de escritorio
 
 ## Solucion Implementada
 
