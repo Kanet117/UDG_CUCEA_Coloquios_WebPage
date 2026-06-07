@@ -1,0 +1,150 @@
+<style type="text/css">
+.speakers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.speaker-card {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.speaker-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.speaker-photo {
+    flex: 0 0 220px;
+}
+
+.speaker-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #eaeaea;
+    display: block;
+}
+
+.speaker-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-main {
+    text-align: center;
+    color: #B22222;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.speaker-label {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 8px;
+    color: #B22222;
+    font-weight: bold;
+}
+
+.titulo-label {
+    color: #B22222;
+    font-weight: bold;
+}
+
+.speaker-talk-title {
+    font-size: 19px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.speaker-date {
+    font-size: 16px;
+    color: #FF6600;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.speaker-bio {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.speaker-bio a {
+    color: #2E75B6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .speaker-card, .speaker-card:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .speaker-photo {
+        margin-bottom: 10px;
+    }
+    .speaker-bio {
+        text-align: justify;
+    }
+}
+</style>
+<div class="ccas-content">
+<h1 class="title-main">Conferencias Plenarias</h1>
+
+<div class="speakers-container">
+<div class="speaker-card">
+<div class="speaker-photo"><img alt="Dr. Alexandro Escudero Nahón" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/AlejandroEscudero.jpeg" />
+<div class="speaker-label">Dr. Alexandro Escudero Nahón</div>
+</div>
+
+<div class="speaker-info">
+<p class="speaker-talk-title"><span class="titulo-label">Título</span> Consideraciones editoriales para la publicación de artículos científicos</p>
+
+<p class="speaker-date">29 Junio | 9:15 - 10:15 H</p>
+
+<p class="speaker-bio">Doctor en Educación por la Universidad de Barcelona, España. Pertenece al Sistema Nacional de Investigadoras e Investigadores (SNII) en el Nivel 1 de la Secretaría de Ciencia, Humanidades, Tecnología e Innovación (SECIHTI). Es profesor investigador de tiempo completo en la Universidad Autónoma de Querétaro, México. Dirige el proyecto Transdigital, que es una iniciativa ciudadana para la difusión de la ciencia con tres líneas de trabajo: revista científica Transdigital, Congreso Virtual Transdigital, Editorial Electrónica Transdigital y revista Divulgación Transdigital. Fue coordinador del Área Temática 18: Tecnologías de Información y Comunicación y Educación del Consejo Mexicano de Investigación Educativa (COMIE) hasta el 2026. Coordina el Comité de Educación Transdigital de la Red LaTE México, que es una Red Temática SECIHTI. Forma parte del Cuerpo Académico Consolidado "Innovación Educativa y Tecnología" de la Secretaría de Educación Pública de México (SEP). Es miembro de la Comisión para el desarrollo de talento y cultura tecno-educativa, del Grupo de Trabajo Gestión de Tecnología Educativa de la sección Tecnologías de la Información y Comunicaciones de la Asociación Nacional de Universidades e Instituciones de Educación Superior (ANUIES).</p>
+</div>
+</div>
+
+<div class="speaker-card">
+<div class="speaker-photo"><img alt="Dr. Antonio Sánchez Bernal" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/dr._antonio_sanchez_bernal.jpg" />
+<div class="speaker-label">Dr. Antonio Sánchez Bernal</div>
+</div>
+
+<div class="speaker-info">
+<p class="speaker-talk-title"><span class="titulo-label">Título</span> Papel "Estrategias para la mejora del desempeño de CAs"</p>
+
+<p class="speaker-date">30 junio | 9:00 - 10:00 H</p>
+
+<p class="speaker-bio"><strong>Coordinadores de Investigación de CUCEA, CUSUR y CUValles.</strong><br />
+Doctor en Ciencias Sociales especialidad Desarrollo Regional, Maestro en Economía, SNI Nivel I. Investigación en finanzas públicas municipales, instituciones y desarrollo municipal, miembro del Comité Técnico del Premio Gobierno y Gestión Local. Autor de un amplio número de libros y artículos especializados en desarrollo municipal. Ex presidente de la Academia Jalisciense de Ciencias. Ex presidente de la Red IGLOM. Jefe del DER-INESER de la UdeG, 2013-2019. Director de la DES, CUCEA UdeG.</p>
+</div>
+</div>
+
+<div class="speaker-card">
+<div class="speaker-photo"><img alt="Mtra. Xochitl Citlali Jiménez Román" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/X_CitlaliJR.jpg" />
+<div class="speaker-label">Mtra. Xochitl Citlali Jiménez Román</div>
+</div>
+
+<div class="speaker-info">
+<p class="speaker-talk-title"><span class="titulo-label">Título</span> Propiedad Intelectual</p>
+
+<p class="speaker-date">3 julio | 9:00 - 10:00 H</p>
+
+<p class="speaker-bio">Estudiante del doctorado en Tecnologías de Información. Cuenta con publicaciones como <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=10670946" target="_blank">"Propuesta de una aplicación móvil para la concientización del cáncer de mama"</a> y <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=8910669" target="_blank">"Aplicación móvil para el control de diabetes"</a>.</p>
+</div>
+</div>
+</div>
+</div>
