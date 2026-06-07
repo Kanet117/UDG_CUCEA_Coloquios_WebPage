@@ -2,6 +2,12 @@
 
 Sitio web oficial del Coloquio de Cuerpos Académicos del Centro Universitario de Ciencias Económico Administrativas (CUCEA) de la Universidad de Guadalajara.
 
+**Estado:** Producción 🟢 | **Cliente:** Universidad de Guadalajara (UDG)
+
+Este repositorio contiene el código fuente, la arquitectura y la documentación del portal web oficial para el Coloquio de Cuerpos Académicos de CUCEA. 
+
+Ante restricciones estrictas de permisos a nivel servidor en el CMS institucional (Drupal 10), el proyecto requirió un **pivote arquitectónico**. Se diseñó una solución estática utilizando **Flask y Jinja2** para renderizar componentes de alta fidelidad, los cuales fueron inyectados directamente en el servidor evadiendo los candados del *Theme* base mediante técnicas avanzadas de sobrescritura CSS.
+
 - **Sitio en producción (Drupal)**: [https://ccas.cucea.udg.mx/inicio](https://ccas.cucea.udg.mx/inicio)
 - **Repositorio GitHub**: [github.com/Kanet117/UDG_CUCEA_Coloquios_WebPage](https://github.com/Kanet117/UDG_CUCEA_Coloquios_WebPage)
 - **Wiki del proyecto**: [github.com/Kanet117/UDG_CUCEA_Coloquios_WebPage/wiki](https://github.com/Kanet117/UDG_CUCEA_Coloquios_WebPage/wiki)
