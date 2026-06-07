@@ -1,0 +1,300 @@
+<style type="text/css">
+body { overflow-x: hidden !important; }
+
+aside.col-sm-3, .region-sidebar-first, #block-herramientas, 
+.breadcrumb, .breadcrumbs, nav[aria-label="breadcrumb"], .page-header { 
+    display: none !important; 
+}
+
+section.col-sm-9 { 
+    width: 100% !important; 
+    float: none !important; 
+    padding: 0 !important;
+}
+
+.ccas-content {
+    max-width: 1100px; 
+    margin: 0 auto !important; 
+    display: block;
+}
+
+#liston, .region-liston, #block-listonudg {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border: none !important;
+}
+
+#liston .campo img {
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+#navigation.container-fluid {
+    background-color: #203864 !important; 
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#navigation .container.navigation {
+    max-width: 100% !important; 
+    width: 100% !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+}
+
+ul.menu--main, .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-wrap: nowrap !important;
+    list-style: none !important;
+    box-sizing: border-box !important;
+}
+
+ul.menu--main li {
+    border: none !important; 
+    background: transparent !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    display: block !important;
+}
+
+ul.menu--main li:first-child {
+    margin-right: auto !important; 
+    margin-left: 0 !important;
+}
+
+ul.menu--main li a {
+    color: #ffffff !important; 
+    font-family: 'Roboto', Arial, sans-serif !important;
+    font-size: 16px !important; 
+    text-transform: none !important; 
+    background-color: transparent !important;
+    padding: 15px 12px !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+    display: block !important;
+}
+
+ul.menu--main li:first-child a {
+    font-size: 22px !important;
+    font-weight: bold !important;
+}
+
+ul.menu--main li a:hover, ul.menu--main li a.is-active {
+    background-color: transparent !important; 
+    color: #ffffff !important;
+    font-weight: bold !important; 
+    text-shadow: 0px 0px 8px rgba(255,255,255,0.4) !important; 
+}
+
+.custom-footer-ccas {
+    font-family: 'Roboto', Arial, sans-serif;
+    width: 100vw !important;
+    position: relative;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-top: 40px;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-banda-azul {
+    background-color: #203864;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-banda-blanca {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px dotted #cccccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-banda-blanca img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: inline-block;
+}
+
+.footer-banda-gris {
+    background-color: #f2f2f2;
+    padding: 30px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-info-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+.footer-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-col.center {
+    text-align: center;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-contact-text a {
+    color: #330099; 
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+.footer-main-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+}
+
+.footer-credits {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 10px;
+    align-items: center;
+    justify-items: start;
+}
+
+.footer-credits .credit-item {
+    display: contents;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.4;
+}
+
+.footer-credits .credit-label {
+    color: #888;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    font-size: 11px;
+    text-transform: uppercase;
+    justify-self: end;
+    text-align: right;
+}
+
+.footer-credits .credit-name {
+    color: #222;
+    font-weight: 400;
+    text-align: left;
+}
+
+.footer-credits .credit-name a {
+    color: #203864;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.footer-credits .credit-name a:hover {
+    color: #2E75B6;
+    text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+    .footer-info-flex {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-contact-item { justify-content: center; }
+    .footer-credits { justify-items: center; }
+    .footer-credits .credit-label { justify-self: end; text-align: right; }
+}
+
+#content11, 
+.region-content11 {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+.custom-footer-ccas {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(-50%) !important; 
+    transition: none !important;
+}
+</style>
+<script>
+  if (window.location.pathname === '/' || window.location.pathname === '/index.php') {
+    window.location.replace('/inicio');
+  }
+</script>
+<div class="custom-footer-ccas">
+<div class="footer-banda-azul">
+<div class="footer-inner">Instituciones participantes</div>
+</div>
+
+<div class="footer-banda-blanca">
+<div class="footer-inner"><img alt="Logos de instituciones" src="https://ccas.cucea.udg.mx/sites/default/files/2026-04/TodosLogos2026-v2.jpg" /></div>
+</div>
+
+<div class="footer-banda-gris">
+<div class="footer-inner footer-info-flex">
+<div class="footer-col left">
+<div class="footer-contact-item">
+<div class="footer-icon-wrapper"><svg fill="none" height="24" stroke="#330099" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="2" ry="2" width="20" x="2" y="4"></rect><path d="M2 4l10 8 10-8"></path></svg></div>
+
+<div class="footer-contact-text"><a href="mailto:coloquio@cucea.udg.mx">coloquio@cucea.udg.mx</a></div>
+</div>
+</div>
+
+<div class="footer-col center">
+<h3 class="footer-main-title">Coloquio de Cuerpos Académicos (CCAs)</h3>
+</div>
+
+<div class="footer-col right">
+<div class="footer-credits">
+<div class="credit-item"><span class="credit-label">Contenido</span> <span class="credit-name">Dra. Karen Hernández</span></div>
+
+<div class="credit-item"><span class="credit-label">Desarrollo</span> <span class="credit-name">Jesús A. García Pérez</span></div>
+
+<div class="credit-item"><span class="credit-label">Frontend</span> <span class="credit-name"><a href="https://www.linkedin.com/in/kanet-sahid-ochoa-guzman-chaptter/" rel="noopener" target="_blank">Kanet Sahid Ochoa Guzmán</a></span></div>
+
+<div class="credit-item"><span class="credit-label">Web</span> <span class="credit-name">Ángela Jusuneith Silva Ramírez</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
