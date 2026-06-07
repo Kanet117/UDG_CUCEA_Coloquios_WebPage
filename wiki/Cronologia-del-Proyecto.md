@@ -3,21 +3,36 @@
 ## Timeline
 
 ```
-Nov 2025 ──── Primer contacto formal con la Dra. Karen
-                - Reunión programada para definir alcances
-                - Se confirma: sitio en CUCEA, tecnología Drupal
+Nov 2025 ──── Primer contacto formal
+                - 13 nov: Se confirma vía WhatsApp: sitio en CUCEA,
+                  tecnología Drupal, se requiere acceso
+                - 14 nov: Karen confirma respuestas: 1) Sí es sitio CUCEA,
+                  2) Sí Drupal (pueden consultar con CTA), 3) Sí se necesita acceso
                 - Se solicita plan de trabajo
+                - Los correos de Karen llegaban a spam por no ser cuenta institucional,
+                  lo que retrasó varias comunicaciones
                 
-2 Dic 2025 ─── Gestión de accesos
-                - Se solicita reunión con CTA (Sergio + Eduardo Muñoz)
+18 Nov 2025 ─── Se detecta que correos de Karen van a spam
+                - No es cuenta institucional, los filtros de Gmail los bloquean
+                
+21 Nov 2025 ─── Pausa por cirugía de emergencia de Karen
+                - Se reanuda comunicación días después
+                
+2 Dic 2025 ─── Gestión de accesos con CTA
+                - CTA (Sergio + coordinador Eduardo Muñoz) requiere reunión
+                  con Karen para habilitar permisos al equipo
                 - Karen contacta directamente al CTA
                 
 15 Dic 2025 ─── Plan de trabajo entregado
                 - Documento con cronograma de actividades
                 
-24 Dic 2025 ─── Problema con credenciales
-                - Karen reporta que la contraseña no funciona
+23-24 Dic 2025 ─── Problema con credenciales
+                - Karen reporta que la contraseña de acceso no funciona
+                - No puede resetearla, hay que esperar al CTA después de vacaciones
                 - Periodo vacacional de por medio
+                
+11 Feb 2026 ─── Reunión presencial en CUCEA
+                - Primera visita al campus para coordinar avances
                 
 21 Ene 2026 ─── Credenciales recibidas
                 - Usuario: MantenimientoCcas

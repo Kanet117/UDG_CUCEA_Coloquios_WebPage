@@ -4,11 +4,31 @@
 
 ### Nov 2025 — Primer contacto formal
 
-La Dra. Karen propuso la primera reunión el 14 de noviembre de 2025. En ese correo confirmó:
+El 13 de noviembre se estableció el primer contacto a través de un grupo de WhatsApp conformado por Kanet, Ángela (compañera de servicio social), la Dra. Paty y la Mtra. Aidé (coordinadoras). La Dra. Karen no estaba en ese grupo.
+
+Se confirmó:
 - El sitio se haría desde el sitio oficial de CUCEA
-- Se usaría **Drupal** (el CMS institucional), aunque sugerió preguntar si había alternativas
-- Fecha estimada de conclusión: diciembre 2025 / enero 2026
+- Se usaría **Drupal** (el CMS institucional), aunque podrían consultar con CTA si había alternativas
+- Se requerían accesos para comenzar
 - Se solicitó un **plan de trabajo** con cronograma
+
+Un problema temprano fue que los correos de la Dra. Karen **llegaban a la carpeta de spam** por no ser una cuenta institucional (gmail.com vs udg.mx), lo que retrasó varias comunicaciones iniciales.
+
+### 21 Nov 2025 — Cirugía de emergencia
+
+La Dra. Karen fue sometida a una cirugía de emergencia, lo que pausó las comunicaciones por varios días. Se reanudó el contacto a finales de noviembre.
+
+### 2 Dic 2025 — Gestión con CTA
+
+El Centro de Tecnologías de Aprendizaje (CTA), encargado de las páginas web de CUCEA, informó que se requería una reunión con la Dra. Karen, el coordinador Eduardo Muñoz y Sergio (del CTA) para habilitar los permisos necesarios, ya que por ser alumnos no podían otorgar accesos directos.
+
+### 23-24 Dic 2025 — Contraseña fallida
+
+La clave del sistema Drupal que la Dra. Karen tenía registrada **no funcionaba**, y no se pudo resetear. Esto, sumado al periodo vacacional, retrasó la entrega de accesos hasta enero.
+
+### 11 Feb 2026 — Reunión presencial en CUCEA
+
+Se realizó una visita presencial al campus para coordinar avances y resolver dudas sobre el desarrollo del sitio.
 
 ### 15 Dic 2025 — Plan de trabajo entregado
 
