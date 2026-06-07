@@ -2,65 +2,72 @@
 
 ## Historia del Proyecto
 
-### El inicio: un proyecto frustrado
+### Nov 2025 — Primer contacto formal
 
-Originalmente, el plan era desarrollar una aplicación con machine learning para la predicción de sarcopenia. Sin embargo, otro compañero borró mi nombre de la lista de asignación en el Excel y puso el suyo. La coordinadora no intervino a pesar de reportarlo. Así que quedé con el proyecto de la página web.
+La Dra. Karen propuso la primera reunión el 14 de noviembre de 2025. En ese correo confirmó:
+- El sitio se haría desde el sitio oficial de CUCEA
+- Se usaría **Drupal** (el CMS institucional), aunque sugerió preguntar si había alternativas
+- Fecha estimada de conclusión: diciembre 2025 / enero 2026
+- Se solicitó un **plan de trabajo** con cronograma
 
-### La incertidumbre tecnológica
+### 15 Dic 2025 — Plan de trabajo entregado
 
-Al preguntar qué tecnologías podía usar, la respuesta fue ambigua:
+Se entregó un documento con el cronograma de actividades. El plan se hizo antes de tener acceso al sistema, por lo que estimaba tiempos con tecnologías que después resultaron no ser viables.
 
-1. **Primera respuesta**: "Las que quieras"
-2. **Segunda respuesta** (con un maestro): "Drupal o PHP"
-3. **Decisión final**: Solo Drupal
+### 21 Ene 2026 — Primer acceso a Drupal (~2 meses después)
 
-Esto significó que la planeación inicial (hecha antes de saber que sería Drupal) quedó obsoleta. El documento de planeación estimaba tiempos con tecnologías que después no podría usar.
+Se recibieron las credenciales (usuario: MantenimientoCcas). La contraseña había fallado en diciembre y hubo que esperar al periodo post-vacacional para que el CTA la restableciera.
 
-### La espera por los accesos (~3 meses)
+### 28 Ene 2026 — Solicitud de permisos de bloques
 
-Solicité los accesos al sistema Drupal y pasaron aproximadamente **3 meses** sin respuesta. Durante ese tiempo:
-- Estudié Drupal por mi cuenta
-- Aprendí sobre sus módulos, vistas, bloques y themes
-- No podía avanzar porque no tenía acceso al sistema
+Al intentar modificar la distribución visual del sitio, el sistema arrojó **error 403 (Acceso Denegado)** en "Estructura > Diseño de bloques". Se solicitó el permiso a la Dra. Karen, quien lo gestionó. Los permisos se concedieron el 4 de febrero.
 
-### Desarrollo en Drupal
+### ~Abr 2026 — Sin acceso a CSS del tema Drupal (~3 meses sin diseño)
 
-Una vez con acceso, trabajé en la arquitectura del sitio usando:
-- **Vistas de Drupal** para páginas dinámicas
-- **Bloques personalizados** para componentes reutilizables
-- Una arquitectura que permitiría mostrar años anteriores y futuros del coloquio llenando un formulario simple
+A pesar de tener acceso al contenido y a los bloques, **nunca se otorgó acceso a la sección de diseño (CSS) del tema Drupal**. Esto impidió:
+- Modificar colores, fuentes y estilos del sitio
+- Personalizar el navbar y el footer visualmente
+- Replicar el diseño del Google Sites que la maestra había aprobado
 
-### El problema del CSS (~3 semanas perdidas)
+Se solicitaron los accesos en múltiples ocasiones sin éxito. La respuesta fue que "no ocupaba acceso" y que "no se había pedido eso", a pesar de que sin esos permisos era imposible modificar la apariencia del sitio.
 
-Cuando el sitio ya estaba casi terminado, me di cuenta de que **no tenía acceso a la sección de diseño (CSS) de Drupal**. Intenté:
-- Solicitar los permisos → no hubo respuesta
-- Buscar alternativas dentro de Drupal → no se podía sin los accesos adecuados
-- Usar workarounds → limitados
+Se perdieron aproximadamente **3 meses** entre solicitudes, esperas y reuniones para explicar el bloqueo técnico.
 
-Perdí aproximadamente **3 semanas** tratando de resolver esto. Eventualmente reporté que era imposible continuar sin los accesos. La respuesta fue contradictoria: "no ocupas acceso, no te pedí eso" (visible en los correos).
+### 22 Abr 2026 — Nuevo Google Sites 2026 + problema del menú gris
 
-### La solución: páginas estáticas
+La Dra. Karen envió un nuevo Google Sites con el diseño actualizado del sitio de referencia y señaló que el menú gris que se había generado no era lo requerido. Sin embargo, ese menú gris era parte del tema Drupal al que no se tenía acceso de diseño. Para cambiarlo se necesitaban los permisos que nunca se otorgaron.
 
-Después de una sesión donde expliqué la situación, la solución fue cambiar a **páginas básicas estáticas** en Drupal, que sí permiten HTML, CSS y JS en el cuerpo. En aproximadamente **1 semana** repliqué el diseño del Google Sites actualizado.
+Se explicó que para modificar el diseño se requerían los accesos solicitados desde enero, y que sin ellos no se podía replicar el sitio de referencia.
 
-### Hacks necesarios por falta de accesos
+### May 2026 — Solución: páginas estáticas
 
-Como nunca me dieron acceso completo al diseño, tuve que:
+Después de exponer la situación en una reunión, se acordó cambiar la estrategia: en lugar de usar las vistas dinámicas y el theme de Drupal, se usarían **páginas básicas estáticas** que sí permiten HTML, CSS y JS en el cuerpo del contenido.
 
-1. **Navbar en HTML**: El menú de navegación se configuró como un bloque personalizado, pero al no poder acceder al CSS del theme, los estilos del navbar van **inline en el footer** mediante un bloque global
-2. **`!important` masivo**: Para invalidar los estilos del theme Drupal que no podía modificar, usé `!important` en cada regla CSS
-3. **Redirección por script**: Drupal no permitía configurar la página de inicio fácilmente, así que puse un script en el footer que redirige `/` a `/inicio`
-4. **Desactivar Smoove**: El theme Drupal tenía una animación Smoove que ocultaba el footer. Tuve que desactivarla con CSS forzado
-5. **Errores de seguridad**: Al inspeccionar la página, Drupal marca errores de seguridad por los scripts inline. No afectan la experiencia del usuario pero son visibles en consola
+En aproximadamente **1 semana** se replicó el diseño completo del Google Sites 2026 usando:
+- CSS inline con `!important` para vencer los estilos del theme
+- Scripts de redirección en el footer
+- El navbar como bloque personalizado con estilos inline
 
-### Ajustes finales (2-3 semanas)
+### Hacks técnicos necesarios
+
+Como nunca se obtuvo acceso completo al diseño del tema Drupal, se implementaron las siguientes soluciones técnicas:
+
+1. **Navbar en HTML con estilos en el footer**: El menú de navegación se configuró como un bloque personalizado, pero al no poder acceder al CSS del theme, los estilos visuales del navbar se inyectaron **inline** mediante un bloque global en el footer
+2. **`!important` masivo**: Para invalidar los estilos del theme Drupal que no se podían modificar, se usó `!important` en cada regla CSS
+3. **Redirección por script**: Se agregó un script en el footer que redirige `/` a `/inicio` porque Drupal no permitía configurar la página de inicio fácilmente
+4. **Desactivar animación Smoove**: El theme Drupal tenía una animación Smoove que ocultaba el footer. Se desactivó con CSS forzado
+5. **Errores de seguridad en consola**: Drupal marca errores de seguridad por los scripts inline. No afectan la experiencia del usuario pero son visibles en la consola del navegador
+
+### Jun 2026 — Ajustes finales y entrega
 
 Las últimas semanas se dedicaron a los ajustes solicitados por la Dra. Karen:
-- Cambiar "Etiqueta editable" por nombres reales
+- Cambiar "Etiqueta editable" por nombres reales en Conferencistas
 - Eliminar años de las fechas
-- Añadir PDF de convocatoria
+- Añadir PDF de convocatoria mediante iframe de Google Drive
 - Agregar "Título" en rojo antes del nombre de cada charla
 - Poner nombres en rojo y más grande bajo las fotos
+- Migrar a Flask como versión independiente de Drupal
+- Documentación completa (ENTREGA_FINAL.md, CHECKLIST_ENTREGA.md, wiki)
 
 ## Lecciones Aprendidas
 

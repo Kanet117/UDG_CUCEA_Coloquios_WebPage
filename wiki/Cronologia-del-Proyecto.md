@@ -3,56 +3,73 @@
 ## Timeline
 
 ```
-Feb 2025 ──── Planeación inicial del proyecto
-                - Documento con tabla de tiempos
-                - Supuesto: tecnologías libres
+Nov 2025 ──── Primer contacto formal con la Dra. Karen
+                - Reunión programada para definir alcances
+                - Se confirma: sitio en CUCEA, tecnología Drupal
+                - Se solicita plan de trabajo
                 
-Mar 2025 ──── Problema de asignación
-                - Proyecto de ML robado por otro compañero
-                - Quedo con la página web del coloquio
+2 Dic 2025 ─── Gestión de accesos
+                - Se solicita reunión con CTA (Sergio + Eduardo Muñoz)
+                - Karen contacta directamente al CTA
                 
-Abr 2025 ──── Consulta tecnológica
-                - Pregunté qué tecnologías usar
-                - Respuesta: "las que quieras"
+15 Dic 2025 ─── Plan de trabajo entregado
+                - Documento con cronograma de actividades
                 
-May 2025 ──── Cambio a Drupal
-                - Un maestro dijo "Drupal o PHP"
-                - Decisión final: solo Drupal
+24 Dic 2025 ─── Problema con credenciales
+                - Karen reporta que la contraseña no funciona
+                - Periodo vacacional de por medio
                 
-Jun-Sep 2025 ─ Espera de accesos (~3 meses)
-                - Solicité acceso al sistema Drupal
-                - Sin respuesta durante 3 meses
-                - Estudié Drupal por mi cuenta
+21 Ene 2026 ─── Credenciales recibidas
+                - Usuario: MantenimientoCcas
+                - Primer acceso al sistema Drupal
                 
-Oct-Dic 2025 ──── Desarrollo en Drupal
-                - Arquitectura con vistas dinámicas
-                - Bloques personalizados
-                - Diseño para mostrar años anteriores/futuros
+28 Ene 2026 ─── Solicitud de permisos de bloques
+                - Al intentar modificar la distribución visual
+                - Error 403 (Acceso Denegado) en "Estructura > Diseño de bloques"
+                - Karen gestiona la solicitud
                 
-Ene 2026 ──── Bloqueo: sin acceso a CSS
-                - Descubrí que no tenía permisos de diseño
-                - 3 semanas intentando resolver
-                - Solicité accesos → sin respuesta
-                - Reporté el bloqueo
-                - Respuesta: "no ocupas acceso, no te pedí eso"
+4 Feb 2026 ──── Permisos de bloques concedidos
+                - Posibilidad de modificar la estructura visual
                 
-Feb 2026 ──── Sesión con la maestra
-                - Expliqué la situación
-                - Decisión: cambiar a páginas estáticas
+23 Feb 2026 ─── Sitio fuera de línea
+                - Reporte de página caída, sin poder avanzar
                 
-Feb-Mar 2026 ──── Reconstrucción (~1 semana)
-                - Repliqué el diseño del Google Sites
+~Abr 2026 ──── Sin acceso a CSS del tema Drupal
+                - 3 meses después del primer acceso, el CSS seguía sin poderse modificar
+                - Se solicita acceso al diseño sin éxito
+                
+22 Abr 2026 ─── Karen envía nuevo Google Sites 2026
+                - Diseño actualizado del sitio de referencia
+                - Se aclara que el menú gris generado no era lo requerido
+                - Se explica que sin accesos de diseño no se puede replicar
+                
+27 Abr 2026 ─── Ajuste de tipografía
+                - Karen pide que el texto se vea como en Google Sites
+                
+1 May 2026 ──── Links de YouTube recibidos
+                - 5 enlaces para los días del evento
+                
+May 2026 ───── Reconstrucción como páginas estáticas
+                - Se replica el diseño del Google Sites 2026
                 - Usando páginas básicas con HTML/CSS/JS
-                - Hacks necesarios (navbar en footer, !important)
+                - Hacks necesarios: navbar en footer, !important, scripts de redirección
                 
-Abr-Jun 2026 ──── Ajustes finales (~2-3 semanas)
-                - Correcciones solicitadas por la Dra. Karen
-                - Migración a Flask como alternativa
-                - Documentación
+26 May 2026 ─── Recordatorio de entrega
+                - Karen indica que es semana de entrega
                 
-Jun 2026 ──── Entrega
+4 Jun 2026 ──── Kanet envía entregables prometidos
+                - Repositorio GitHub, documento de arquitectura,
+                  recomendaciones, guía de modificación
+                
+5 Jun 2026 ──── Últimas correcciones solicitadas
+                - PDF en convocatorias, etiquetas en conferencistas,
+                  eliminar años de fechas
+                - Reunión de cierre programada
+                
+Jun 2026 ──── Entrega final
                 - Repositorio GitHub completo
-                - Documento de entrega
+                - Documento de entrega (ENTREGA_FINAL.md)
+                - Checklist de verificación (CHECKLIST_ENTREGA.md)
                 - Wiki con experiencia y guías
 ```
 
@@ -60,20 +77,22 @@ Jun 2026 ──── Entrega
 
 | Fecha | Evento | Impacto |
 |---|---|---|
-| Feb 2025 | Planeación | Documento inicial |
-| May 2025 | Elección Drupal | Cambió todo el stack |
-| Sep 2025 | Primer acceso | 3 meses perdidos |
-| Ene 2026 | Sin CSS | 3 semanas perdidas, cambio a estático |
-| Feb 2026 | Sitio estático funcional | 1 semana de desarrollo |
+| Nov 2025 | Primer contacto formal | Inicio del proyecto |
+| 15 Dic 2025 | Plan de trabajo entregado | Documento base |
+| 21 Ene 2026 | Credenciales recibidas | Primer acceso a Drupal (~2 meses después del primer contacto) |
+| 28 Ene 2026 | Solicitud permisos bloques | Error 403 detectado |
+| ~Abr 2026 | Sin acceso a CSS | 3 meses después, el diseño seguía sin poderse modificar |
+| 22 Abr 2026 | Google Sites 2026 | Nuevo diseño de referencia |
+| May 2026 | Reconstrucción estática | ~1 semana de desarrollo intensivo |
 | Jun 2026 | Entrega | Proyecto completo |
 
 ## Tiempos totales
 
 | Actividad | Duración |
 |---|---|
-| Espera de accesos | ~3 meses |
-| Desarrollo en Drupal (vistas) | ~3 meses |
-| Bloqueo sin CSS | ~3 semanas |
-| Reconstrucción estática | ~1 semana |
+| Gestión de accesos iniciales | ~2 meses (nov 2025 → ene 2026) |
+| Desarrollo en Drupal con bloqueos | ~3 meses |
+| Sin acceso a CSS | ~3 meses sin poder modificar diseño |
+| Reconstrucción como páginas estáticas | ~1 semana |
 | Ajustes finales | ~2-3 semanas |
 | **Total** | **~7-8 meses** |
