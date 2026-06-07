@@ -1,114 +1,97 @@
-# Guía de Solución de Fallos
+# Guia de Solucion de Fallos
 
-## Problemas Comunes y Soluciones
+## Continuidad Operativa del Sitio
 
-### 1. La página se ve en blanco
+Esta guia documenta los escenarios mas comunes que pueden presentarse durante la operacion del sitio y las acciones recomendadas para restablecer el servicio.
 
-**Causa probable**: Drupal bloqueó scripts o CSS por seguridad. Esto pasa cuando el contenido HTML tiene etiquetas que Drupal considera inseguras.
+### 1. La pagina se visualiza en blanco
 
-**Solución**:
-1. Ir a la página en Drupal → Editar
-2. Click en **Fuente HTML** (ícono `<>`)
-3. Verificar que el dropdown de formato de texto diga **"HTML completo"**
-4. Pegar el código de la carpeta `drupal_raw/` (el archivo correspondiente a la página)
+**Causa probable**: El filtro de seguridad de Drupal puede bloquear ciertas etiquetas HTML si el formato de texto no es el correcto.
+
+**Solucion**:
+1. Ir a la pagina en Drupal → Editar
+2. Click en **Fuente HTML** (icono `<>`)
+3. Verificar que el formato de texto sea **"HTML completo"**
+4. Pegar el codigo de la carpeta `drupal_raw/` (archivo correspondiente a la pagina)
 5. Click en **Guardar**
 
----
+### 2. Los estilos visuales del sitio no se aplican
 
-### 2. El CSS del sitio desapareció
+**Causa probable**: El bloque global que contiene los estilos CSS puede estar despublicado o la region de footer puede haber cambiado.
 
-**Causa probable**: El bloque de footer que contiene los estilos globales se despublicó o Drupal sobrescribió los estilos del theme.
+**Solucion**:
+1. Ir a **Estructura → Diseno de bloques**
+2. Localizar el bloque **Footer Global CCAs**
+3. Verificar que este **publicado** y asignado a la region **Footer**
+4. Si es necesario, editar el bloque y pegar el codigo de `drupal_raw/footer_navbar.html`
 
-**Solución**:
-1. Ir a **Estructura → Diseño de bloques**
-2. Buscar el bloque **Footer Global CCAs**
-3. Verificar que esté **publicado** (check activo)
-4. Verificar que esté asignado a la región **Footer**
-5. Si está todo bien, editar el bloque y pegar el código de `drupal_raw/footer_navbar.html`
+### 3. Enlaces a formularios o documentos rotos
 
----
+**Causa probable**: Las URLs de Google Forms, Google Drive u otros recursos externos fueron actualizadas.
 
-### 3. Links rotos (Google Forms, Drive, etc.)
-
-**Causa probable**: La Dra. Karen modificó las URLs de los formularios o documentos.
-
-**Solución**:
-1. Ir a la página que contiene el link roto
+**Solucion**:
+1. Ir a la pagina que contiene el enlace
 2. Editar → Fuente HTML
-3. Buscar el `href` del link y reemplazar por la nueva URL
+3. Localizar el atributo `href` del enlace y actualizar con la nueva URL
 4. Guardar
 
----
+### 4. Error 500 al ejecutar Flask localmente
 
-### 4. Error 500 al cargar Flask
+**Causa probable**: El servidor Flask se detuvo o el entorno virtual esta desactivado.
 
-**Causa probable**: El servidor Flask se cayó o el virtualenv está desactivado.
-
-**Solución**:
+**Solucion**:
 ```bash
 cd /ruta/al/proyecto/UDG_CUCEA_Coloquios_WebPage
 source venv/bin/activate
 python app.py
 ```
 
----
-
 ### 5. Error 404 en una ruta de Flask
 
-**Causa probable**: La ruta no existe en `app.py`.
+**Causa probable**: La ruta solicitada no esta definida en `app.py`.
 
-**Solución**: Agregar la ruta faltante:
+**Solucion**: Agregar la ruta faltante:
 ```python
 @app.route('/nueva-pagina')
 def nueva_pagina():
     return render_template('nueva-pagina.html')
 ```
 
----
+### 6. Imagen no se carga
 
-### 6. Imagen no carga
+**Causa probable**: La URL de la imagen cambio o el servidor de origen no esta disponible.
 
-**Causa probable**: La URL de la imagen en Drupal cambió o el servidor está caído.
-
-**Solución**:
-1. Editar la página → Fuente HTML
-2. Buscar el `<img>` y reemplazar `src` por la nueva URL
-3. Si la imagen es local, subirla a Drupal en **Contenido → Archivos** y copiar la URL
-
----
+**Solucion**:
+1. Editar la pagina → Fuente HTML
+2. Localizar la etiqueta `<img>` y reemplazar el atributo `src` por la nueva URL
+3. Si la imagen es local, subirla a Drupal en **Contenido → Archivos** y copiar la URL generada
 
 ### 7. Puerto 5000 ocupado
 
-**Causa probable**: Otra instancia de Flask está corriendo.
+**Causa probable**: Otra instancia de Flask esta corriendo en el mismo puerto.
 
-**Solución**:
+**Solucion**:
 ```bash
-# Matar proceso en puerto 5000
+# Identificar y liberar el puerto
 fuser -k 5000/tcp
-# O alternativamente
-python app.py  # Flask usará otro puerto si el 5000 está ocupado
+# O ejecutar Flask en un puerto alternativo
+python app.py
 ```
 
----
+### 8. Drupal elimina el codigo al guardar
 
-### 8. Drupal borra el código al guardar
+**Causa probable**: El formato de texto seleccionado no es "HTML completo". Drupal filtra etiquetas HTML en otros formatos.
 
-**Causa probable**: El formato de texto no es "HTML completo". Drupal filtra etiquetas HTML si está en otro formato.
+**Solucion**: Antes de guardar, confirmar que el selector de formato de texto indique **"HTML completo"**, no "Texto plano" ni "Filtrado".
 
-**Solución**: Antes de guardar, verificar que el dropdown de formato de texto diga **"HTML completo"**, no "Texto plano" ni "Filtrado".
+### 9. El menu de navegacion se ve diferente
 
----
+**Causa probable**: Los estilos del navbar estan vinculados al bloque del footer. Si el bloque se despublica, los estilos se pierden.
 
-### 9. El navbar se ve diferente
+**Solucion**: Verificar que el bloque **Footer Global CCAs** este publicado y asignado correctamente (ver punto 2).
 
-**Causa probable**: Los estilos del navbar están en el footer. Si el bloque del footer se despublicó, el navbar pierde los estilos.
+### 10. Mensajes de seguridad en la consola del navegador
 
-**Solución**: Verificar que el bloque **Footer Global CCAs** esté publicado (ver punto 2).
+**Causa probable**: Politicas de seguridad de contenido (CSP) del servidor Drupal.
 
----
-
-### 10. Error de seguridad en consola del navegador
-
-**Causa probable**: Drupal bloquea scripts inline por políticas de seguridad CSP (Content Security Policy).
-
-**Impacto**: Solo visible en consola del navegador. **No afecta la experiencia del usuario**. Es un efecto secundario de no tener acceso al theme Drupal para configurar las políticas CSP correctamente.
+**Impacto**: Los mensajes son visibles unicamente en la consola de herramientas de desarrollador. **No afectan la experiencia del usuario ni el funcionamiento del sitio**.

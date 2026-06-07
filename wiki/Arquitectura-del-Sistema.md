@@ -1,50 +1,106 @@
 # Arquitectura del Sistema
 
-## Stack Tecnológico
+## Stack Tecnologico
 
-| Capa | Tecnología | Versión |
+| Capa | Tecnologia | Version |
 |---|---|---|
-| Backend | Flask (Python) | 3.1.3 |
+| Backend | Flask (Python) | 3.1 |
 | Template Engine | Jinja2 | (incluido en Flask) |
-| Frontend | HTML5 + CSS3 | — |
+| Frontend | HTML5 + CSS3 (Flexbox + Grid) | — |
 | JavaScript | Vanilla JS | — |
-| CMS (producción) | Drupal | 10 |
-| Servidor web | Nginx / Apache | — |
+| CMS (produccion) | Drupal | 10 |
 | Dependencias | Solo Flask | — |
 
 ## Diagrama de Carpetas (Flask)
 
 ```
 UDG_CUCEA_Coloquios_WebPage/
-├── app.py                 # 7 rutas REST
-├── requirements.txt       # flask>=3.0
-├── static/
-│   ├── css/               # 8 archivos CSS
-│   └── js/main.js
-├── templates/
-│   ├── base.html          # Layout base (herencia Jinja2)
+├── app.py                       # Servidor Flask (8 rutas REST)
+├── requirements.txt             # flask>=3.0
+├── .gitignore                   # Exclusiones estandar
+├── ENTREGA_FINAL.md             # Documento completo de entrega
+├── CHECKLIST_ENTREGA.md         # Lista de verificacion pre-entrega
+├── README.md                    # Instrucciones de instalacion
+├── LICENSE                      # MIT
+├── drupal_raw/                  # Codigo HTML/CSS/JS para copiar a Drupal
 │   ├── inicio.html
+│   ├── convocatorias.html
 │   ├── comite.html
 │   ├── conferencistas.html
-│   ├── convocatorias.html
 │   ├── guias.html
+│   ├── registro.html
 │   ├── programa.html
-│   └── registro.html
-├── drupal_raw/            # Código para copiar a Drupal
-└── wiki/                  # Documentación en GitHub Wiki
+│   └── footer_navbar.html
+├── templates/                   # Templates Flask (Jinja2)
+│   ├── base.html                # Layout base (navbar + footer)
+│   ├── inicio.html              # Pagina principal
+│   ├── comite.html              # Comite organizador
+│   ├── conferencistas.html      # Conferencistas plenarios
+│   ├── convocatorias.html       # Convocatorias + iframe PDF
+│   ├── guias.html               # Guias para ponencias
+│   ├── programa.html            # Programa del evento
+│   └── registro.html            # Formularios de registro
+├── static/
+│   ├── css/
+│   │   ├── global.css           # Navbar, footer, reset
+│   │   ├── inicio.css           # Acordeones, banner, botones
+│   │   ├── comite.css           # Tarjetas de comite
+│   │   ├── conferencistas.css   # Speaker cards
+│   │   ├── convocatorias.css    # Convocatorias
+│   │   ├── guias.css            # Cajas informativas
+│   │   ├── programa.css         # Programa, enlaces YouTube
+│   │   └── registro.css         # Botones de formulario
+│   └── js/main.js
+└── wiki/                        # Documentacion (GitHub Wiki)
 ```
 
-## Flujo de Datos
+## Instalacion y Ejecucion (Flask)
 
+### Requisitos Previos
+
+- Python 3.10 o superior
+- Git
+- pip (incluido con Python)
+
+### Pasos
+
+```bash
+# 1. Clonar el repositorio
+git clone git@github.com:Kanet117/UDG_CUCEA_Coloquios_WebPage.git
+cd UDG_CUCEA_Coloquios_WebPage
+
+# 2. Crear entorno virtual
+python3 -m venv venv
+
+# 3. Activar el entorno virtual
+# En Linux/Mac:
+source venv/bin/activate
+# En Windows:
+# venv\Scripts\activate
+
+# 4. Instalar dependencias
+pip install -r requirements.txt
+
+# 5. Ejecutar la aplicacion
+python app.py
 ```
-[Usuario] → Navegador → [Flask / Drupal] → [HTML + CSS + JS] → Renderizado
-```
 
-- **No hay base de datos**: Todo el contenido es estático
-- **No hay API**: Las rutas de Flask solo renderizan templates
-- **No hay sesiones**: Es un sitio informativo, no requiere login
+El servidor estara disponible en `http://localhost:5000`.
 
-## Decisiones de Diseño
+## Rutas Disponibles
+
+| Ruta | Pagina | URL Produccion |
+|---|---|---|
+| `/` | Inicio | [ccas.cucea.udg.mx](https://ccas.cucea.udg.mx) |
+| `/inicio` | Inicio | [ccas.cucea.udg.mx/inicio](https://ccas.cucea.udg.mx/inicio) |
+| `/comite` | Comite organizador | [ccas.cucea.udg.mx/comite](https://ccas.cucea.udg.mx/comite) |
+| `/conferencistas` | Conferencistas | [ccas.cucea.udg.mx/conferencistas](https://ccas.cucea.udg.mx/conferencistas) |
+| `/convocatorias` | Convocatorias | [ccas.cucea.udg.mx/convocatorias](https://ccas.cucea.udg.mx/convocatorias) |
+| `/programa` | Programa del evento | [ccas.cucea.udg.mx/programa](https://ccas.cucea.udg.mx/programa) |
+| `/guias` | Guias | [ccas.cucea.udg.mx/guias](https://ccas.cucea.udg.mx/guias) |
+| `/registro` | Registro | [ccas.cucea.udg.mx/registro](https://ccas.cucea.udg.mx/registro) |
+
+## Decisiones de Diseno
 
 ### Navbar (Flexbox)
 ```css
@@ -54,7 +110,7 @@ UDG_CUCEA_Coloquios_WebPage/
     align-items: center;
 }
 .navbar-nav li:first-child {
-    margin-right: auto;  /* Empuja los demás a la derecha */
+    margin-right: auto;  /* Primer elemento (CCAs) empuja los demas a la derecha */
 }
 ```
 
@@ -66,7 +122,7 @@ UDG_CUCEA_Coloquios_WebPage/
 }
 ```
 
-### Acordeones (CSS puro, sin JS)
+### Acordeones (CSS puro)
 ```css
 .accordion input[type="checkbox"]:checked ~ .accordion_text {
     height: auto;
@@ -80,3 +136,14 @@ UDG_CUCEA_Coloquios_WebPage/
     left: 50%;
     transform: translateX(-50%);
 }
+```
+
+## Diagrama de Flujo de Datos
+
+```
+[Usuario] → Navegador → [Flask / Drupal] → [HTML + CSS + JS] → Renderizado
+```
+
+- **Sin base de datos**: Todo el contenido es estatico
+- **Sin API**: Las rutas de Flask solo renderizan templates
+- **Sin sesiones**: Sitio informativo, no requiere login

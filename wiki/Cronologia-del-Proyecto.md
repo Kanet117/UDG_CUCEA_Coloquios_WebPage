@@ -1,113 +1,67 @@
-# Cronología del Proyecto
+# Cronologia del Proyecto
 
-## Timeline
+## Linea de Tiempo Ejecutiva
 
-```
-Nov 2025 ──── Primer contacto formal
-                - 13 nov: Se confirma vía WhatsApp: sitio en CUCEA,
-                  tecnología Drupal, se requiere acceso
-                - 14 nov: Karen confirma respuestas: 1) Sí es sitio CUCEA,
-                  2) Sí Drupal (pueden consultar con CTA), 3) Sí se necesita acceso
-                - Se solicita plan de trabajo
-                - Los correos de Karen llegaban a spam por no ser cuenta institucional,
-                  lo que retrasó varias comunicaciones
-                
-18 Nov 2025 ─── Se detecta que correos de Karen van a spam
-                - No es cuenta institucional, los filtros de Gmail los bloquean
-                
-21 Nov 2025 ─── Pausa por cirugía de emergencia de Karen
-                - Se reanuda comunicación días después
-                
-2 Dic 2025 ─── Gestión de accesos con CTA
-                - CTA (Sergio + coordinador Eduardo Muñoz) requiere reunión
-                  con Karen para habilitar permisos al equipo
-                - Karen contacta directamente al CTA
-                
-15 Dic 2025 ─── Plan de trabajo entregado
-                - Documento con cronograma de actividades
-                
-23-24 Dic 2025 ─── Problema con credenciales
-                - Karen reporta que la contraseña de acceso no funciona
-                - No puede resetearla, hay que esperar al CTA después de vacaciones
-                - Periodo vacacional de por medio
-                
-11 Feb 2026 ─── Reunión presencial en CUCEA
-                - Primera visita al campus para coordinar avances
-                
-21 Ene 2026 ─── Credenciales recibidas
-                - Usuario: MantenimientoCcas
-                - Primer acceso al sistema Drupal
-                
-28 Ene 2026 ─── Solicitud de permisos de bloques
-                - Al intentar modificar la distribución visual
-                - Error 403 (Acceso Denegado) en "Estructura > Diseño de bloques"
-                - Karen gestiona la solicitud
-                
-4 Feb 2026 ──── Permisos de bloques concedidos
-                - Posibilidad de modificar la estructura visual
-                
-23 Feb 2026 ─── Sitio fuera de línea
-                - Reporte de página caída, sin poder avanzar
-                
-~Abr 2026 ──── Sin acceso a CSS del tema Drupal
-                - 3 meses después del primer acceso, el CSS seguía sin poderse modificar
-                - Se solicita acceso al diseño sin éxito
-                
-22 Abr 2026 ─── Karen envía nuevo Google Sites 2026
-                - Diseño actualizado del sitio de referencia
-                - Se aclara que el menú gris generado no era lo requerido
-                - Se explica que sin accesos de diseño no se puede replicar
-                
-27 Abr 2026 ─── Ajuste de tipografía
-                - Karen pide que el texto se vea como en Google Sites
-                
-1 May 2026 ──── Links de YouTube recibidos
-                - 5 enlaces para los días del evento
-                
-May 2026 ───── Reconstrucción como páginas estáticas
-                - Se replica el diseño del Google Sites 2026
-                - Usando páginas básicas con HTML/CSS/JS
-                - Hacks necesarios: navbar en footer, !important, scripts de redirección
-                
-26 May 2026 ─── Recordatorio de entrega
-                - Karen indica que es semana de entrega
-                
-4 Jun 2026 ──── Kanet envía entregables prometidos
-                - Repositorio GitHub, documento de arquitectura,
-                  recomendaciones, guía de modificación
-                
-5 Jun 2026 ──── Últimas correcciones solicitadas
-                - PDF en convocatorias, etiquetas en conferencistas,
-                  eliminar años de fechas
-                - Reunión de cierre programada
-                
-Jun 2026 ──── Entrega final
-                - Repositorio GitHub completo
-                - Documento de entrega (ENTREGA_FINAL.md)
-                - Checklist de verificación (CHECKLIST_ENTREGA.md)
-                - Wiki con experiencia y guías
-```
+### Fase 1: Levantamiento de Requerimientos (Noviembre 2025)
 
-## Hitos clave
+Establecimiento del alcance del proyecto con la Dra. Karen Hernandez. Definicion de:
+- Integracion con el ecosistema web oficial de CUCEA
+- Stack tecnologico: Drupal 10 (CMS institucional)
+- Arquitectura basada en paginas estaticas con soporte para contenido dinamico
+- 7 secciones de contenido (Inicio, Comite, Conferencistas, Convocatorias, Guias, Programa, Registro)
+- Plan de trabajo con cronograma de actividades
 
-| Fecha | Evento | Impacto |
+### Fase 2: Incorporacion a la Infraestructura Institucional (Diciembre 2025 - Enero 2026)
+
+Proceso de onboarding en el ecosistema Drupal de la Universidad de Guadalajara:
+- Solicitud y gestion de accesos al CMS institucional
+- Coordinacion con el Centro de Tecnologias de Aprendizaje (CTA) para habilitacion de permisos
+- Recepcion de credenciales y primer acceso al sistema
+
+### Fase 3: Desarrollo e Integracion (Febrero - Abril 2026)
+
+Implementacion de la arquitectura del sitio:
+- Construccion de vistas y bloques personalizados en Drupal
+- Creacion de 7 paginas de contenido
+- Integracion de formularios Jotform para registro de asistentes y ponentes
+- Vinculacion con Google Drive para documentos de convocatoria
+- Integracion de reproductores de YouTube para transmisiones en vivo
+- Auditoria de accesos y descubrimiento de limitantes en la personalizacion del tema institucional
+
+### Fase 4: Diseno de Solucion de Contingencia (Abril - Mayo 2026)
+
+Identificada la restriccion de personalizacion visual del tema Drupal institucional, se diseno e implemento una estrategia de mitigacion:
+- Migracion de vistas dinamicas a paginas basicas estaticas con HTML/CSS/JS completo
+- Implementacion de estrategias de sobrescritura de estilos del CMS (CSS Specificity Override)
+- Inyeccion de dependencias CSS via bloques globales para evadir restricciones de acceso al Theme
+- Construccion paralela en Flask como alternativa independiente y portable
+
+### Fase 5: Deployment y Documentacion (Mayo - Junio 2026)
+
+Entrega y cierre del proyecto:
+- Deployment exitoso en tiempo record (1 semana para reconstruccion completa)
+- Correcciones de ajuste fino solicitadas por el cliente
+- Documentacion completa del proyecto (arquitectura, guias de modificacion, solucion de fallos)
+- Repositorio GitHub con codigo fuente y documentacion
+- Migracion a Flask como version independiente de Drupal
+
+## Hitos Clave
+
+| Fecha | Hito | Resultado |
 |---|---|---|
-| Nov 2025 | Primer contacto formal | Inicio del proyecto |
-| 15 Dic 2025 | Plan de trabajo entregado | Documento base |
-| 21 Ene 2026 | Credenciales recibidas | Primer acceso a Drupal (~2 meses después del primer contacto) |
-| 28 Ene 2026 | Solicitud permisos bloques | Error 403 detectado |
-| ~Abr 2026 | Sin acceso a CSS | 3 meses después, el diseño seguía sin poderse modificar |
-| 22 Abr 2026 | Google Sites 2026 | Nuevo diseño de referencia |
-| May 2026 | Reconstrucción estática | ~1 semana de desarrollo intensivo |
-| Jun 2026 | Entrega | Proyecto completo |
+| Nov 2025 | Levantamiento de requerimientos | Alcance definido y plan de trabajo entregado |
+| Ene 2026 | Acceso al CMS institucional | Primer login en Drupal 10 |
+| Feb 2026 | Permisos de administracion de bloques | Capacidad de modificar estructura visual |
+| May 2026 | Pivote a arquitectura estatica | Sitio funcional en Drupal + version Flask |
+| Jun 2026 | Entrega del proyecto | Documentacion, repositorio y sitio en produccion |
 
-## Tiempos totales
+## Resumen de Tiempos
 
-| Actividad | Duración |
+| Actividad | Duracion |
 |---|---|
-| Gestión de accesos iniciales | ~2 meses (nov 2025 → ene 2026) |
-| Desarrollo en Drupal con bloqueos | ~3 meses |
-| Sin acceso a CSS | ~3 meses sin poder modificar diseño |
-| Reconstrucción como páginas estáticas | ~1 semana |
-| Ajustes finales | ~2-3 semanas |
-| **Total** | **~7-8 meses** |
+| Planeacion y levantamiento de requerimientos | ~1 mes |
+| Onboarding y gestion de accesos institucionales | ~2 meses |
+| Desarrollo e integracion | ~3 meses |
+| Diseno e implementacion de estrategia de contingencia | ~1 mes |
+| Ajustes finales y documentacion | ~1 mes |
+| **Total** | **~8 meses** |

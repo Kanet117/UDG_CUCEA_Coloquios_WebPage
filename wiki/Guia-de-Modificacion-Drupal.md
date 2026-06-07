@@ -1,94 +1,84 @@
-# Guía de Modificación en Drupal
+# Guia de Modificacion en Drupal
 
-## Cómo editar una página
+## Como editar el contenido de una pagina
 
-### Paso 1: Iniciar sesión
-Ir a `https://ccas.cucea.udg.mx/user` e ingresar con credenciales de administrador.
+### Paso 1: Iniciar sesion
+Ir a `https://ccas.cucea.udg.mx/user` e ingresar con las credenciales de administrador.
 
-### Paso 2: Encontrar la página
-- Ir a **Contenido** → se mostrarán todas las páginas del sitio
-- Buscar por título (ej. "inicio", "convocatoria", "comite")
+### Paso 2: Localizar la pagina
+- Ir a **Contenido** → se desplegara el listado completo de paginas del sitio
+- Identificar la pagina por su titulo (ej. "inicio", "convocatoria", "comite")
 - Click en **Editar**
 
 ### Paso 3: Editar el contenido
-- La página se verá en modo preview con un editor visual
-- **Dos formas de editar**:
+La interfaz mostrara el contenido en modo preview con un editor visual. Existen dos modalidades de edicion:
 
-#### Opción A: Editor visual (sin código)
-- Seleccionar el texto o imagen directamente en el preview
-- Usar las opciones de la barra de herramientas (negritas, colores, links)
-- Ideal si no sabes HTML
+**Opcion A: Editor visual (recomendado para cambios sencillos)**
+- Seleccionar directamente el texto o imagen en el preview
+- Utilizar las herramientas de la barra superior (negritas, colores, alineacion, enlaces)
+- Ideal para actualizar textos, fechas o imagenes sin modificar la estructura
 
-#### Opción B: Fuente HTML (recomendado para cambios precisos)
-- Click en el ícono **`<>`** (Fuente HTML)
-- Se mostrará el código HTML completo
-- **CRÍTICO**: Verificar que "HTML completo" esté seleccionado en el dropdown de formato de texto
-- Realizar los cambios directamente en el código
+**Opcion B: Fuente HTML (recomendado para cambios estructurales)**
+- Click en el icono **`<>`** (Fuente HTML) para ver el codigo completo
+- **Importante**: Verificar que el formato de texto seleccionado sea **"HTML completo"**
+- Realizar las modificaciones directamente en el codigo
+- Utilizar esta opcion para: agregar iframes, modificar estilos, cambiar estructura de componentes
 
-### Paso 4: Guardar
-- Click en **Guardar** (abajo)
-- Opcional: click en **Preview** para ver cómo queda antes de guardar
+### Paso 4: Guardar los cambios
+- Click en **Guardar** (boton ubicado en la parte inferior)
+- Opcional: utilizar **Preview** para visualizar los cambios antes de guardar
 
----
+## Como modificar el footer
 
-## Cómo modificar el footer
+1. Navegar a **Estructura → Diseno de bloques → Biblioteca de bloques personalizados**
+2. Seleccionar **Footer Global CCAs**
+3. El proceso de edicion es identico al de una pagina (Fuente HTML + Guardar)
+4. El footer contiene los estilos globales del sitio, por lo que se debe tener precaucion al modificarlo
 
-1. Ir a **Estructura → Diseño de bloques → Biblioteca de bloques personalizados**
-2. Buscar y clickear en **Footer Global CCAs**
-3. El flujo es idéntico al de editar una página (Fuente HTML + Guardar)
+## Como modificar el menu de navegacion (navbar)
 
----
+1. Ir a **Estructura → Menus → Main navigation**
+2. Se mostraran todos los enlaces del menu principal:
 
-## Cómo modificar el menú (navbar)
-
-1. Ir a **Estructura → Menús → Main navigation**
-2. Se verán todas las opciones del navbar:
-
-| Enlace | Operations |
+| Enlace del menu | Accion |
 |---|---|
 | CCAs | Editar |
 | Inicio | Editar |
 | Convocatoria | Editar |
-| Comité | Editar |
-| Guías | Editar |
+| Comite | Editar |
+| Guias | Editar |
 | Registro | Editar |
 | Programa | Editar |
 | Conferencistas | Editar |
 
-3. Click en **Editar** para modificar un enlace (título, ruta, peso)
-4. Para **agregar**: Click en "Agregar enlace"
-5. Para **eliminar**: Click en "Eliminar" (ej. para quitar RESDO como pidió la maestra)
-6. El orden se controla con los pesos (valores más pequeños = arriba)
+3. Para modificar un enlace: Click en **Editar** → cambiar titulo o ruta → Guardar
+4. Para agregar un enlace: Click en **"Agregar enlace"** → completar titulo y ruta → Guardar
+5. Para eliminar un enlace: Click en **"Eliminar"**
+6. El orden de los enlaces se controla mediante los pesos (valores mas pequenos aparecen primero)
 
----
-
-## Cómo reemplazar el PDF de convocatorias
+## Como reemplazar el PDF de convocatorias
 
 1. Subir el nuevo PDF a Google Drive
-2. Obtener el ID del archivo (ej. `13Y7NFPjp9BVZO2C17iC-ccZwR6ykr1Cu`)
-3. Crear el enlace de preview: `https://drive.google.com/file/d/[ID]/preview`
-4. Ir a la página **Convocatorias** en Drupal
+2. Obtener el ID del archivo desde la URL (ej. `13Y7NFPjp9BVZO2C17iC-ccZwR6ykr1Cu`)
+3. Construir la URL de previsualizacion: `https://drive.google.com/file/d/[ID]/preview`
+4. Ir a la pagina **Convocatorias** en Drupal
 5. Editar → Fuente HTML
-6. Buscar el iframe y reemplazar el `src` por el nuevo
+6. Localizar el iframe y reemplazar el valor del atributo `src`
 7. Guardar
 
----
+## Como actualizar los enlaces de YouTube en Programa
 
-## Cómo cambiar un link de YouTube
-
-1. Ir a la página **Programa**
+1. Ir a la pagina **Programa**
 2. Editar → Fuente HTML
-3. Buscar el `<a>` del día a modificar
-4. Cambiar el `href` por la nueva URL de YouTube Live
+3. Localizar el enlace (`<a>`) del dia que se desea modificar
+4. Reemplazar el atributo `href` por la nueva URL de YouTube Live
 5. Guardar
 
----
+## Como agregar o eliminar ediciones en la pagina de inicio
 
-## Cómo agregar/quitar años en página de inicio
-
-1. Ir a la página **Inicio**
+1. Ir a la pagina **Inicio**
 2. Editar → Fuente HTML
-3. Buscar los botones con clase `botton-events`
-4. Agregar o quitar `<a class="botton-events" href="...">CCAs 20XX</a>`
-5. Para desactivar un botón (futuro): usar clase `botton-events disabled`
+3. Localizar los botones con clase `botton-events`
+4. Para agregar: copiar la estructura de un boton existente y ajustar el texto y enlace
+5. Para deshabilitar un boton (ediciones futuras): agregar la clase `botton-events disabled`
 6. Guardar
