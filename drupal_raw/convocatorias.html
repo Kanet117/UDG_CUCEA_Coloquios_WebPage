@@ -1,67 +1,166 @@
-<h2 style="text-align: center; color: red; font-weight: bold;">Convocatorias</h2>
+<style type="text/css">
+#liston, 
+.region-liston, 
+#block-listonudg, 
+.block-udg-liston {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border: none !important;
+}
 
-<p>Los Cuerpos Académicos con claves UDG-CA-931, UDG-CA-649, UDG-CA-722, UDG-CA-539, y la red de Estudios y Desarrollo de las Organizaciones (RESDO) invitan a los académicos, investigadores, tesistas y profesionales de diversas áreas del conocimiento, que formen parte de un CA o grupo de investigación, para que difundan y divulguen sus estudios e investigaciones sobre sus líneas de investigación en el <strong style="color: #FF6600;">evento virtual</strong>.</p>
+#liston .campo img {
+    margin: 0 auto !important;
+    display: block !important;
+}
 
-<div style="border: 1px solid #FF6600; padding: 20px; margin-bottom: 20px; background-color: white;">
-<h3 style="text-align: center; color: #1A237E; font-weight: bold; margin-top: 0;">Coloquio de Cuerpos Académicos (CCAs) 2024</h3>
+aside.col-sm-3, 
+.region-sidebar-first, 
+#block-herramientas { 
+    display: none !important; 
+}
+
+section.col-sm-9 { 
+    width: 100% !important; 
+    float: none !important;
+}
+
+.breadcrumb, 
+.breadcrumbs { 
+    display: none !important; 
+}
+
+.ccas-content {
+    max-width: 1100px;
+    margin: 0 auto !important;
+    padding: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+    display: block;
+}
+
+.breadcrumb, .breadcrumbs, nav[aria-label="breadcrumb"] {
+  display: none !important;
+}
+
+.ccas-content .title { font-weight: bold; text-align: center; color: #B22222; }
+.ccas-content .second-title { font-weight: bold; text-align: center; color: #203864; }
+.ccas-content .third-title { font-weight: bold; text-align: center; color:#FF6600; }
+.ccas-content p { text-align: justify; font-size: 19px; line-height: 1.6; }
+.ccas-content ul { font-size: 18px; line-height: 1.6; }
+
+.ccas-content .box-information { border: 2px solid #FF6600; padding: 20px; margin-bottom: 20px; border-radius: 8px;}
+.ccas-content .box2-information { border: 2px solid #203864; padding: 20px; margin-bottom: 20px; border-radius: 8px;}
+
+.ccas-content .display-group-tables { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.ccas-content .margin-table-color { 
+  flex: 3 1 380px;
+  display: flex;
+}
+.ccas-content .margin-table-color:nth-child(2) {
+  flex: 1 1 180px;
+}
+.ccas-content .blue-table { 
+  color: white; 
+  background-color: #203864; 
+  text-align: left; 
+  padding: 20px; 
+  border-radius: 8px;
+  width: 100%;
+  margin: 0;
+  font-size: 16px !important;
+}
+.ccas-content .orange-table { 
+  color: white; 
+  background-color: #FF6600; 
+  text-align: center; 
+  padding: 20px; 
+  border-radius: 8px;
+  width: 100%;
+  margin: 0;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  font-size: 16px !important;
+}
+
+.ccas-content .pdf-container {
+  margin: 40px 0;
+  text-align: center;
+}
+.ccas-content .pdf-container iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.ccas-content .contacto-wrapper { display: flex; flex-direction: column; gap: 8px; margin-top: 20px; }
+.ccas-content .asunto-fila { display: flex; align-items: center; gap: 12px; }
+.ccas-content .icono-sobre { 
+  background-color: #ffd333; width: 32px; height: 32px; border-radius: 50%; 
+  display: flex; align-items: center; justify-content: center; font-size: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+}
+.ccas-content .texto-asunto { font-size: 19px; color: #000; }
+.ccas-content .email-enlace { font-size: 18px; color: #4b2c85; text-decoration: underline; font-weight: bold; }
+</style>
+<div class="ccas-content">
+<h2 class="title">Convocatorias</h2>
+
+<p>La red de Estudios y Desarrollo de las Organizaciones (RESDO) a través de sus Cuerpos Académicos (CAs) con clave UDG-CA-931, UDG-CA-649, UDG-CA-321, UDG-CA-610 y UDG-CA-539, la División de Estudios Científicos y Tecnológicos (CUValles) y el Departamento de Sistemas de Información (DSI) de la UdeG, invitan al público en general para asistir a las sesiones de su interés, y a los académicos, investigadores perfil/aspirantes PRODEP, tesistas y profesionales de diversas áreas del conocimiento, ya sea que formen parte, colaboren o no en un CA/Grupo de Investigación (GI), para que difundan y divulguen sus estudios e investigaciones sobre sus líneas de investigación en el <strong style="color: orange;">evento virtual</strong></p>
+
+<div class="box-information">
+<h2 class="second-title">Coloquio de Cuerpos Académicos (CCAs) 2026</h2>
 
 <p>A través de su asistencia y/o de ponencias de investigación concluidas o en proceso bajo las siguientes consideraciones:</p>
 
-<ul style="padding-left: 40px;">
+<ul>
 	<li>Número máximo de ponentes: 4 por ponencia.</li>
-	<li>Duración de ponencia de trabajo concluido: 25min (20 min de presentación y 5 min de preguntas).</li>
-	<li>Duración de ponencia de trabajo en proceso: 15min (10 min de presentación y 5 min de preguntas).</li>
+	<li>Duración de ponencia de trabajo concluido: 25 min (20 min de presentación y 5 min de preguntas).</li>
+	<li>Duración de ponencia de trabajo en proceso: 15 min (10 min de presentación y 5 min de preguntas).</li>
 	<li>Envío de presentación a través del registro respectivo.</li>
-	<li>Formato guía <em>PlantillaPCCAs</em> correspondiente a ponencia.</li>
+	<li>Formato guía <em style="text-decoration: underline; color: #007BFF"><a href="https://docs.google.com/presentation/d/1QYATURS-hCadOaXniPnzLLYSVD8h9lq9/edit?slide=id.p1#slide=id.p1" target="_blank">PlantillaPCCAs</a></em> correspondiente a ponencia.</li>
 	<li>Inicio de envío a partir de la presente convocatoria.</li>
-	<li>Costo gratuito por CA o GI.</li>
+	<li>Costo gratuito.</li>
 	<li>Más información en el menú Guías.</li>
 </ul>
 
-<p>A realizarse en la semana del <strong style="color: #FF6600;">1 al 5 de julio de 2024</strong> con actividades complementarias como conferencias plenarias y talleres. Los participantes que solamente serán <span style="color: #3b82f6;">asistentes</span> pueden hacer su registro a partir del <span style="color: #3b82f6;">29/mar/24</span> en el menú registro en la opción <span style="color: #3b82f6;">registro de asistente</span>. Asimismo, les invitan a participar en la convocatoria de publicación de un libro científico.</p>
+<p>A realizarse en la semana del <strong style="color: orange;">29 de junio al 3 de julio</strong> con actividades complementarias como conferencias plenarias y talleres. Los participantes que solamente serán <em style="color:#007BFF;">asistentes</em> pueden hacer su registro a partir de <em style="color:#007BFF;">la presente convocatoria</em> en el menú registro en la opción <em style="color:#007BFF;">registro de asistente</em>. Asimismo, se les invita a participar en la convocatoria de publicación de un libro científico.</p>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-<div style="background-color: #1A237E; color: white; padding: 15px; flex: 1; min-width: 250px;"><strong style="font-size: 1.1em;">Fechas de ponencias</strong>
-
-<ul style="padding-left: 20px; margin-top: 10px; margin-bottom: 0;">
-	<li>Límite de envío: <strike>31/ene/24</strike> aplazo a <strong>21/feb/24</strong></li>
-	<li>Notificación de aceptación: 27-29/febrero/24</li>
-	<li>Registro: 31/mayo/24</li>
-</ul>
+<div class="display-group-tables">
+<div class="margin-table-color">
+<p class="blue-table"><strong>Fechas de ponencias</strong><br><br>
+● Límite de envío: 26/may/26<br>
+● Notificación de aceptación: 27-30/may/26<br>
+● Registro: 1/jun/26</p>
 </div>
 
-<div style="background-color: #FF6600; color: white; padding: 15px; flex: 1; min-width: 200px; display: flex; align-items: center; justify-content: center; text-align: center;"><strong style="font-size: 1.1em;">Las convocatorias<br />
-para ponencia y<br />
-publicación son<br />
-independientes</strong></div>
+<div class="margin-table-color">
+<p class="orange-table"><strong>Las convocatorias<br>
+para ponencia y<br>
+publicación son<br>
+independientes</strong></p>
+</div>
 
-<div style="background-color: #1A237E; color: white; padding: 15px; flex: 1; min-width: 250px;"><strong style="font-size: 1.1em;">Fechas de publicación</strong>
-
-<ul style="padding-left: 20px; margin-top: 10px; margin-bottom: 0;">
-	<li>Límite de envío <strong>no modificable</strong>: 31/julio/24</li>
-	<li>Notificación de aceptación: 29-31/agosto/24</li>
-	<li>Registro: 17/septiembre/24</li>
-</ul>
+<div class="margin-table-color">
+<p class="blue-table"><strong>Fechas de publicación</strong><br><br>
+● Límite de envío <strong>no modificable</strong>: 12/jul/26<br>
+● Notificación de aceptación: 19/jul/26<br>
+● Publicación: 19/oct/26</p>
 </div>
 </div>
 
-<div style="border: 1px solid #FF6600; padding: 20px; margin-bottom: 20px; background-color: white;">
-<h3 style="text-align: center; color: #1A237E; font-weight: bold; margin-top: 0;">Publicación de libro científico</h3>
+<div class="box2-information">
+<h2 class="third-title">Publicación de libro</h2>
 
-<p>El CA o Grupo de Investigación (GI) puede someter un artículo de su investigación concluida para publicarse como capítulo de libro con las siguientes consideraciones:</p>
-
-<ul style="padding-left: 40px;">
-	<li>Trabajos originales e inéditos no publicados antes ni estar en revisión en otra parte.</li>
-	<li>Número máximo de autores: 5 por capítulo.</li>
-	<li>Capítulo con doi.</li>
-	<li>Editorial brasileña Atena.</li>
-	<li>Indexadores: International Scientific Indexing, Dialnet, Latindex, Redib, entre otros.</li>
-	<li>Evaluación a doble ciego.</li>
-	<li>Envío del artículo a través del registro respectivo.</li>
-	<li>Formato guía <em>PlantillaLibro</em> correspondiente a publicación.</li>
-	<li>Costo tentativo: $3,000- $5,000 pesos por CA o GI. Al momento de la notificación se confirma el monto.</li>
-</ul>
+<p>Los profesores, investigadores y tesistas interesados en difundir sus investigaciones, podrán someter sus trabajos a través de la convocatoria de la editorial Transdigital. A continuación, se comparte la convocatoria y la guía respectiva <em style="text-decoration: underline; color: #007BFF"><a href="https://docs.google.com/document/d/10hkeI3Y_JqMLkHndTgBzoXCSf-xxo4ZV/edit?usp=sharing&ouid=106478909911188713510&rtpof=true&sd=true" target="_blank">GuíaAutor.</a></em></p>
 </div>
 
-<div style="margin-top: 40px; width: 100%; height: 800px; border: 1px solid #e0e0e0; box-shadow: 0 4px 10px rgba(0,0,0,0.05);"><iframe allow="autoplay" frameborder="0" height="100%" src="https://drive.google.com/file/d/13Y7NFPjp9BVZO2C17iC-ccZwR6ykr1Cu/preview" style="border: none;" width="100%"></iframe></div>
+<div class="pdf-container"><iframe allow="autoplay" src="https://drive.google.com/file/d/13Y7NFPjp9BVZO2C17iC-ccZwR6ykr1Cu/preview"></iframe></div>
+</div>
